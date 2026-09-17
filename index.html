@@ -5,83 +5,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Topside Asset Review</title>
   <style>
-    :root{color-scheme:dark}
-    *{box-sizing:border-box}
+    :root{color-scheme:dark}*{box-sizing:border-box}
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#101214;color:#f5f7f8}
-    header{padding:24px 18px 12px;max-width:1100px;margin:auto}
-    h1{font-size:28px;margin:0 0 6px}
+    header{padding:24px 18px 8px;max-width:1100px;margin:auto} h1{font-size:28px;margin:0 0 6px}
     .sub{color:#aeb7c0;margin:0;line-height:1.45}
-    main{max-width:1100px;margin:auto;padding:14px 14px 50px;display:grid;gap:18px}
-    .card{background:#191d21;border:1px solid #2a3036;border-radius:14px;overflow:hidden}
-    .card a{display:block;background:#0c0e10}
-    .card img{display:block;width:100%;height:auto}
-    .meta{padding:14px 15px 16px}
-    h2{font-size:20px;margin:0 0 5px}
-    p{margin:0;color:#b7c0c8;line-height:1.4}
-    .hint{font-size:13px;margin-top:8px;color:#8f9aa4}
-    footer{max-width:1100px;margin:auto;padding:0 18px 28px;color:#7f8992;font-size:13px}
-    @media(min-width:850px){main{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+    main{max-width:1100px;margin:auto;padding:12px 14px 50px;display:grid;gap:18px}
+    .group{grid-column:1/-1;margin:18px 2px 0;padding-top:18px;border-top:1px solid #2a3036}
+    .group:first-child{margin-top:0;border-top:0}.group h2{margin:0 0 4px;font-size:23px}.group p{margin:0;color:#aeb7c0}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#293038;color:#dce3e8;font-size:12px;font-weight:700;margin-left:7px;vertical-align:3px}
+    .card{background:#191d21;border:1px solid #2a3036;border-radius:14px;overflow:hidden}.card a{display:block;background:#0c0e10}
+    .card img{display:block;width:100%;height:auto}.meta{padding:13px 15px 15px}.meta h3{font-size:19px;margin:0 0 5px}.meta p{margin:0;color:#b7c0c8;line-height:1.4}.hint{font-size:13px;margin-top:7px!important;color:#8f9aa4!important}
+    .wide{grid-column:1/-1}footer{max-width:1100px;margin:auto;padding:0 18px 28px;color:#7f8992;font-size:13px}
+    @media(min-width:850px){main{grid-template-columns:1fr 1fr}}
   </style>
 </head>
 <body>
-<header>
-  <h1>Topside Asset Review</h1>
-  <p class="sub">Blender geometry + scale approval renders. Production shaders are intentionally omitted.</p>
-</header>
+<header><h1>Topside Asset Review</h1><p class="sub">Asset Workflow 2.0 ┬╖ Blender geometry + scale approval. Production shaders intentionally omitted.</p></header>
 <main>
-  <section class="card">
-    <a href="images/marine-crane.png" target="_blank" rel="noopener">
-      <img src="images/marine-crane.png" alt="Topside Marine Crane Blender approval render">
-    </a>
-    <div class="meta">
-      <h2>Marine Crane</h2>
-      <p>4.36 Ã— 1.52 Ã— 4.50 m Â· 15,024 tris</p>
-      <p class="hint">Tap image to open the full PNG.</p>
-    </div>
-  </section>
-  <section class="card">
-    <a href="images/floating-work-platform.png" target="_blank" rel="noopener">
-      <img src="images/floating-work-platform.png" alt="Topside Floating Work Platform Blender approval render">
-    </a>
-    <div class="meta">
-      <h2>Floating Work Platform</h2>
-      <p>6.00 Ã— 6.00 Ã— 3.43 m Â· 15,626 tris</p>
-      <p class="hint">Tap image to open the full PNG.</p>
-    </div>
-  </section>
-  <section class="card wide">
-    <a href="images/workshop-module-v02.png" target="_blank" rel="noopener">
-      <img src="images/workshop-module-v02.png" alt="Topside Workshop Module V02 Blender approval render">
-    </a>
-    <div class="meta">
-      <h2>Workshop Module V02</h2>
-      <p>3.20 Ã— 3.12 Ã— 2.68 m Â· 11,825 tris</p>
-      <p class="hint">Bad Meshy tarp removed and replaced with rigid ribbed marine roof.</p>
-    </div>
-  </section>
-  <section class="card wide">
-    <a href="images/structure06a-engine-hall-perspective.png" target="_blank" rel="noopener">
-      <img src="images/structure06a-engine-hall-perspective.png" alt="Topside Structure 6A Engine Hall Blender perspective approval render">
-    </a>
-    <div class="meta">
-      <h2>Structure 6A — Collapsed Main Engine Hall V01</h2>
-      <p>5 modular assets · 46,008 source tris · geometry + scale only</p>
-      <p class="hint">Two 8 m engine masses, broken catwalk, ruined bulkhead/deck modules, wreck-light prop and 1.8 m player reference.</p>
-    </div>
-  </section>
-  <section class="card">
-    <a href="images/structure06a-engine-hall-top.png" target="_blank" rel="noopener">
-      <img src="images/structure06a-engine-hall-top.png" alt="Topside Structure 6A Engine Hall Blender top approval render">
-    </a>
-    <div class="meta"><h2>Structure 6A — Top View</h2><p>Modular layout and navigation spacing review.</p><p class="hint">Tap image to open full PNG.</p></div>
-  </section>
-  <section class="card">
-    <a href="images/structure06a-engine-hall-side.png" target="_blank" rel="noopener">
-      <img src="images/structure06a-engine-hall-side.png" alt="Topside Structure 6A Engine Hall Blender side approval render">
-    </a>
-    <div class="meta"><h2>Structure 6A — Side View</h2><p>Vertical scale check with 1.8 m player reference.</p><p class="hint">No production shaders or working ship lights.</p></div>
-  </section></main>
-<footer>Topside Â· Asset approval gallery</footer>
+  <section class="group"><h2>Drowned Ferry ┬╖ Structure 6B <span class="badge">AWAITING APPROVAL</span></h2><p>Dead Generator / Mechanical Room ┬╖ low-clutter underwater ruin ┬╖ Wrecker lights only</p></section>
+  <section class="card wide"><a href="images/structure06b-generator-room-perspective.png" target="_blank" rel="noopener"><img src="images/structure06b-generator-room-perspective.png" alt="Structure 6B generator room perspective Blender review"></a><div class="meta"><h3>6B ┬╖ Perspective</h3><p>Two 6 m generator units, clear central route, upper maintenance access and 1.8 m player reference.</p><p class="hint">Tap image for full PNG.</p></div></section>
+  <section class="card"><a href="images/structure06b-generator-room-top.png" target="_blank" rel="noopener"><img src="images/structure06b-generator-room-top.png" alt="Structure 6B generator room top view"></a><div class="meta"><h3>6B ┬╖ Top</h3><p>Navigation spacing and low-clutter layout check.</p></div></section>
+  <section class="card"><a href="images/structure06b-generator-room-side.png" target="_blank" rel="noopener"><img src="images/structure06b-generator-room-side.png" alt="Structure 6B generator room side elevation"></a><div class="meta"><h3>6B ┬╖ Side</h3><p>Generator, stair, catwalk and player-height relationship.</p></div></section>
+
+  <section class="group"><h2>Drowned Ferry ┬╖ Structure 6A <span class="badge">PASS</span></h2><p>Collapsed Main Engine Hall</p></section>
+  <section class="card wide"><a href="images/structure06a-engine-hall-perspective.png" target="_blank" rel="noopener"><img src="images/structure06a-engine-hall-perspective.png" alt="Structure 6A engine hall perspective"></a><div class="meta"><h3>6A ┬╖ Perspective</h3><p>Approved Blender composition.</p></div></section>
+  <section class="card"><a href="images/structure06a-engine-hall-top.png" target="_blank" rel="noopener"><img src="images/structure06a-engine-hall-top.png" alt="Structure 6A engine hall top view"></a><div class="meta"><h3>6A ┬╖ Top</h3><p>Approved.</p></div></section>
+  <section class="card"><a href="images/structure06a-engine-hall-side.png" target="_blank" rel="noopener"><img src="images/structure06a-engine-hall-side.png" alt="Structure 6A engine hall side elevation"></a><div class="meta"><h3>6A ┬╖ Side</h3><p>Approved.</p></div></section>
+
+  <section class="group"><h2>Fabricator Kit <span class="badge">PASS</span></h2><p>Approved Workflow 2.0 companion assets</p></section>
+  <section class="card"><a href="images/marine-crane.png" target="_blank" rel="noopener"><img src="images/marine-crane.png" alt="Marine Crane Blender approval render"></a><div class="meta"><h3>Marine Crane</h3><p>4.36 ├ù 1.52 ├ù 4.50 m ┬╖ 15,024 tris</p></div></section>
+  <section class="card"><a href="images/floating-work-platform.png" target="_blank" rel="noopener"><img src="images/floating-work-platform.png" alt="Floating Work Platform Blender approval render"></a><div class="meta"><h3>Floating Work Platform</h3><p>6.00 ├ù 6.00 ├ù 3.43 m ┬╖ 15,626 tris</p></div></section>
+  <section class="card wide"><a href="images/workshop-module-v02.png" target="_blank" rel="noopener"><img src="images/workshop-module-v02.png" alt="Workshop Module V02 Blender approval render"></a><div class="meta"><h3>Workshop Module V02</h3><p>3.20 ├ù 3.12 ├ù 2.68 m ┬╖ 11,825 tris</p></div></section>
+</main>
+<footer>Topside ┬╖ Asset Workflow 2.0 review gallery</footer>
 </body>
 </html>
-
