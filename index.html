@@ -1,104 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Topside Asset Review</title>
-  <style>
-    :root{color-scheme:dark}*{box-sizing:border-box}
-    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#101214;color:#f5f7f8}
-    header{padding:24px 18px 8px;max-width:1100px;margin:auto} h1{font-size:28px;margin:0 0 6px}
-    .sub{color:#aeb7c0;margin:0;line-height:1.45}
-    main{max-width:1100px;margin:auto;padding:12px 14px 50px;display:grid;gap:18px}
-    .group{grid-column:1/-1;margin:18px 2px 0;padding-top:18px;border-top:1px solid #2a3036}
-    .group:first-child{margin-top:0;border-top:0}.group h2{margin:0 0 4px;font-size:23px}.group p{margin:0;color:#aeb7c0}
-    .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#293038;color:#dce3e8;font-size:12px;font-weight:700;margin-left:7px;vertical-align:3px}
-    .card{background:#191d21;border:1px solid #2a3036;border-radius:14px;overflow:hidden}.card a{display:block;background:#0c0e10}
-    .card img{display:block;width:100%;height:auto}.meta{padding:13px 15px 15px}.meta h3{font-size:19px;margin:0 0 5px}.meta p{margin:0;color:#b7c0c8;line-height:1.4}.hint{font-size:13px;margin-top:7px!important;color:#8f9aa4!important}
-    .wide{grid-column:1/-1}footer{max-width:1100px;margin:auto;padding:0 18px 28px;color:#7f8992;font-size:13px}
-    @media(min-width:850px){main{grid-template-columns:1fr 1fr}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Topside Asset Review</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#101214;color:#f5f7f8}
+header,main,footer{max-width:1100px;margin:auto;padding-left:18px;padding-right:18px}
+header{padding-top:26px;padding-bottom:12px}h1{margin:0 0 6px;font-size:30px}
+.sub,.muted{color:#aeb7c0;line-height:1.5}.banner{background:#191d21;border:1px solid #39434d;border-radius:14px;padding:18px;margin:14px 0 28px}
+.badge{display:inline-block;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;font-size:12px;font-weight:700;margin-left:7px;vertical-align:3px}
+a{color:#9fd5ff}.grid{display:grid;grid-template-columns:1fr;gap:16px}.card{background:#191d21;border:1px solid #2a3036;border-radius:14px;overflow:hidden}
+.card img{width:100%;height:auto;display:block}.meta{padding:13px 15px}.meta h3{margin:0 0 5px}.meta p{margin:0;color:#b7c0c8;line-height:1.4}
+h2{margin:28px 0 10px}footer{padding-top:24px;padding-bottom:30px;color:#7f8992;font-size:13px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style>
 </head>
-<body>
-<header><h1>Topside Asset Review</h1><p class="sub">Asset Workflow 2.0 - Blender geometry and scale approval. Production shaders intentionally omitted.</p><p><a href="structure16.html"><strong>Open Structure 16 — Twin Axial Fan Gallery Review →</strong></a></p><p><a href="ferry-v03-review.html"><strong>Open Current Ferry V03 Corrective Review →</strong></a></p><p><a href="meshy-redo.html">Open Prior Drowned Ferry Meshy Redo Review →</a></p></header>
+<body><header>
+<h1>Topside Asset Review</h1>
+<p class="sub">Asset Workflow 2.0 — geometry and scale review. Production shaders intentionally omitted.</p>
+</header>
 <main>
-  <section class="group"><h2>Drowned Ferry - Structure 15 <span class="badge">SUPERSEDED BY V03 PASS</span></h2><p>Original Blender-direct V01 galley review. Current approved modular Meshy V03 is on the Corrective V03 Review page.</p></section>
-  <section class="card wide"><a href="images/structure15-main-galley-perspective.png" target="_blank" rel="noopener"><img src="images/structure15-main-galley-perspective.png" alt="Structure 15 main galley perspective Blender review"></a><div class="meta"><h3>15 - Perspective</h3><p>18 × 12 × 6 m ruined ferry galley with cooking line, prep islands, wash station, serving pass and damaged end bulkhead.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card wide"><a href="images/structure15-main-galley-cookingline.png" target="_blank" rel="noopener"><img src="images/structure15-main-galley-cookingline.png" alt="Structure 15 cooking line review"></a><div class="meta"><h3>15 - Cooking Line / Prep Area</h3><p>Commercial range bank, extractor hood/rack, wash line and prep islands establish a clear ferry-kitchen identity.</p></div></section>
-  <section class="card"><a href="images/structure15-main-galley-side.png" target="_blank" rel="noopener"><img src="images/structure15-main-galley-side.png" alt="Structure 15 side elevation"></a><div class="meta"><h3>15 - Side</h3><p>Shows the 6 m vertical envelope, low equipment lines, ruined framing and open traversal lanes.</p></div></section>
-  <section class="card"><a href="images/structure15-main-galley-top.png" target="_blank" rel="noopener"><img src="images/structure15-main-galley-top.png" alt="Structure 15 top view"></a><div class="meta"><h3>15 - Top</h3><p>18 × 12 m plan with two prep islands, service counter and a broad damaged-bulkhead swim entry.</p></div></section>
-  <section class="card wide"><a href="images/structure15-main-galley-scale.png" target="_blank" rel="noopener"><img src="images/structure15-main-galley-scale.png" alt="Structure 15 scale check"></a><div class="meta"><h3>15 - Dedicated Scale Check</h3><p>1.8 m player and 6 m gauge shown against the cooking line and galley framing.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 14 <span class="badge">PASS</span></h2><p>Exterior Bridge / Wheelhouse V02 - Option 3 Bridge With Wings - rebuilt functional marine stair connection - ferry systems dead</p></section>
-  <section class="card wide"><a href="images/structure14-bridge-wings-perspective.png" target="_blank" rel="noopener"><img src="images/structure14-bridge-wings-perspective.png" alt="Structure 14 bridge with wings perspective Blender review"></a><div class="meta"><h3>14 - Perspective</h3><p>Exterior wheelhouse shell with open forward windows, port/starboard wing platforms, broken roof and communications mast.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card wide"><a href="images/structure14-bridge-wings-front.png" target="_blank" rel="noopener"><img src="images/structure14-bridge-wings-front.png" alt="Structure 14 bridge front elevation"></a><div class="meta"><h3>14 - Front / Bridge Wings</h3><p>Approx. 20 m overall width with six large bridge-window openings and extended wing platforms.</p></div></section>
-  <section class="card"><a href="images/structure14-bridge-wings-side.png" target="_blank" rel="noopener"><img src="images/structure14-bridge-wings-side.png" alt="Structure 14 side elevation"></a><div class="meta"><h3>14 - Side</h3><p>Shows the 3.2 m bridge-deck elevation, rebuilt straight marine stair with upper/lower landings, and broken upper mast silhouette.</p></div></section>
-  <section class="card"><a href="images/structure14-bridge-wings-top.png" target="_blank" rel="noopener"><img src="images/structure14-bridge-wings-top.png" alt="Structure 14 top view"></a><div class="meta"><h3>14 - Top</h3><p>Approx. 9 m depth with missing roof section, open wing circulation and exterior access.</p></div></section>
-  <section class="card wide"><a href="images/structure14-bridge-wings-scale.png" target="_blank" rel="noopener"><img src="images/structure14-bridge-wings-scale.png" alt="Structure 14 scale check"></a><div class="meta"><h3>14 - Dedicated Scale Check</h3><p>1.8 m player and 12 m vertical gauge shown against the bridge and mast.</p></div></section>
-  <section class="card wide"><a href="images/structure14-bridge-wings-connection.png" target="_blank" rel="noopener"><img src="images/structure14-bridge-wings-connection.png" alt="Structure 14 wing stair connection"></a><div class="meta"><h3>14 - Wing / Structure 13 Connection</h3><p>V02 stair path is continuous: Structure 13 deck to lower landing to stair to upper landing to the open port bridge wing.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 13 <span class="badge">PASS</span></h2><p>Lifeboat Deck / Davits - hanging lifeboat - damaged empty station - ferry systems dead</p></section>
-  <section class="card wide"><a href="images/structure13-lifeboat-deck-perspective.png" target="_blank" rel="noopener"><img src="images/structure13-lifeboat-deck-perspective.png" alt="Structure 13 lifeboat deck perspective Blender review"></a><div class="meta"><h3>13 - Perspective</h3><p>Open lifeboat deck with intact launch station, hanging enclosed lifeboat, damaged davits and sparse inboard framing.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card wide"><a href="images/structure13-lifeboat-deck-outboard.png" target="_blank" rel="noopener"><img src="images/structure13-lifeboat-deck-outboard.png" alt="Structure 13 outboard view"></a><div class="meta"><h3>13 - Outboard / Lifeboat</h3><p>8.8 m enclosed lifeboat suspended from paired davits; empty damaged station remains open for traversal and cover.</p></div></section>
-  <section class="card"><a href="images/structure13-lifeboat-deck-side.png" target="_blank" rel="noopener"><img src="images/structure13-lifeboat-deck-side.png" alt="Structure 13 side elevation"></a><div class="meta"><h3>13 - Side</h3><p>Approx. 26 m deck run showing launch-station spacing, low railings and dead ferry framing.</p></div></section>
-  <section class="card"><a href="images/structure13-lifeboat-deck-top.png" target="_blank" rel="noopener"><img src="images/structure13-lifeboat-deck-top.png" alt="Structure 13 top view"></a><div class="meta"><h3>13 - Top</h3><p>Open deck layout with one occupied station, one empty cradle, and one fallen damaged davit.</p></div></section>
-  <section class="card wide"><a href="images/structure13-lifeboat-deck-scale.png" target="_blank" rel="noopener"><img src="images/structure13-lifeboat-deck-scale.png" alt="Structure 13 scale check"></a><div class="meta"><h3>13 - Dedicated Scale Check</h3><p>1.8 m player/gauge shown against the 8.8 m lifeboat and approximately 6.8 m davit height.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 12 <span class="badge">PASS</span></h2><p>Bow / Loading-Door Rupture - tapered bow shell - ruptured ramp - major swim-through - Wrecker lights only</p></section>
-  <section class="card wide"><a href="images/structure12-bow-rupture-front.png" target="_blank" rel="noopener"><img src="images/structure12-bow-rupture-front.png" alt="Structure 12 bow loading-door rupture front Blender review"></a><div class="meta"><h3>12 - Front / Loading-Bay Mouth</h3><p>Broken bow-mouth frame and tapered port/starboard shell sections define the primary frontal breach and swim-through.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card wide"><a href="images/structure12-bow-rupture-perspective.png" target="_blank" rel="noopener"><img src="images/structure12-bow-rupture-perspective.png" alt="Structure 12 bow rupture three-quarter Blender review"></a><div class="meta"><h3>12 - Three-Quarter Approach</h3><p>Ruptured loading ramp leads through the bow opening into the repeated ferry framing and broken deck route.</p></div></section>
-  <section class="card"><a href="images/structure12-bow-rupture-side.png" target="_blank" rel="noopener"><img src="images/structure12-bow-rupture-side.png" alt="Structure 12 side elevation"></a><div class="meta"><h3>12 - Side</h3><p>Approx. 32 m bow section with shell taper, loading-ramp drop and interior structural progression.</p></div></section>
-  <section class="card"><a href="images/structure12-bow-rupture-top.png" target="_blank" rel="noopener"><img src="images/structure12-bow-rupture-top.png" alt="Structure 12 top view"></a><div class="meta"><h3>12 - Top</h3><p>Approx. 14 m maximum ferry width narrowing into the ruptured bow mouth.</p></div></section>
-  <section class="card wide"><a href="images/structure12-bow-rupture-scale.png" target="_blank" rel="noopener"><img src="images/structure12-bow-rupture-scale.png" alt="Structure 12 scale check"></a><div class="meta"><h3>12 - Dedicated Scale Check</h3><p>1.8 m player and gauge shown beside the bow opening; nominal overall height is about 11.5 m.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 11 <span class="badge">PASS</span></h2><p>Collapsed Stern Shell - Option 1 - crushed ribs and folded hull plating - major swim-through - Wrecker lights only</p></section>
-  <section class="card wide"><a href="images/structure11-collapsed-stern-perspective.png" target="_blank" rel="noopener"><img src="images/structure11-collapsed-stern-perspective.png" alt="Structure 11 collapsed stern shell perspective Blender review"></a><div class="meta"><h3>11 - Perspective</h3><p>18 m stern-quarter shell with progressively collapsed ribs, broken decks, folded plating and an open swim-through.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card"><a href="images/structure11-collapsed-stern-side.png" target="_blank" rel="noopener"><img src="images/structure11-collapsed-stern-side.png" alt="Structure 11 side elevation"></a><div class="meta"><h3>11 - Side</h3><p>Shows the stern collapse progression, sparse shell remnants and the large central breach.</p></div></section>
-  <section class="card"><a href="images/structure11-collapsed-stern-top.png" target="_blank" rel="noopener"><img src="images/structure11-collapsed-stern-top.png" alt="Structure 11 top view"></a><div class="meta"><h3>11 - Top</h3><p>Approx. 18 ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 13 m envelope with broken deck runs and open water routes.</p></div></section>
-  <section class="card wide"><a href="images/structure11-collapsed-stern-scale.png" target="_blank" rel="noopener"><img src="images/structure11-collapsed-stern-scale.png" alt="Structure 11 scale check"></a><div class="meta"><h3>11 - Scale Check</h3><p>1.8 m player reference against the roughly 8.5 m-high collapsed stern shell.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 10 <span class="badge">PASS</span></h2><p>Torn Midship Rib Field - approved exterior concept - ferry systems dead</p></section>
-  <section class="card wide"><a href="images/structure10-rib-field-perspective.png" target="_blank" rel="noopener"><img src="images/structure10-rib-field-perspective.png" alt="Structure 10 torn midship rib field perspective Blender review"></a><div class="meta"><h3>10 - Perspective</h3><p>30 m exterior rib field with repeated hull frames, sparse plating, open swim-through structure and two Wrecker lights.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card"><a href="images/structure10-rib-field-side.png" target="_blank" rel="noopener"><img src="images/structure10-rib-field-side.png" alt="Structure 10 side profile"></a><div class="meta"><h3>10 - Side / Profile</h3><p>15 ribs at 2 m spacing; stripped side plating and open exterior hull skeleton.</p></div></section>
-  <section class="card"><a href="images/structure10-rib-field-top.png" target="_blank" rel="noopener"><img src="images/structure10-rib-field-top.png" alt="Structure 10 top view"></a><div class="meta"><h3>10 - Top</h3><p>5.3 m hull width with repeated transverse framing and broken deck strips.</p></div></section>
-  <section class="card wide"><a href="images/structure10-rib-field-scale.png" target="_blank" rel="noopener"><img src="images/structure10-rib-field-scale.png" alt="Structure 10 scale check"></a><div class="meta"><h3>10 - Dedicated Scale Check</h3><p>1.8 m player reference against the 6.6 m high hull frame and Wrecker floodlight.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 9 <span class="badge">PASS</span></h2><p>Wrecker Salvage Bell Dock / Special Extract - later-added salvage installation - ferry systems dead</p></section>
-  <section class="card wide"><a href="images/structure09-salvage-bell-perspective.png" target="_blank" rel="noopener"><img src="images/structure09-salvage-bell-perspective.png" alt="Structure 9 salvage bell dock perspective through hull breach"></a><div class="meta"><h3>9 - Hull-Breach Approach</h3><p>Wrecker platform attached to the ruined ferry, with salvage bell, gantry, winch, power/control gear and sparse work lighting.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card"><a href="images/structure09-salvage-bell-top.png" target="_blank" rel="noopener"><img src="images/structure09-salvage-bell-top.png" alt="Structure 9 top view"></a><div class="meta"><h3>9 - Top</h3><p>Nominal 12 x 9 m dock platform with clear boarding space and later-added Wrecker equipment.</p></div></section>
-  <section class="card"><a href="images/structure09-salvage-bell-side.png" target="_blank" rel="noopener"><img src="images/structure09-salvage-bell-side.png" alt="Structure 9 side elevation"></a><div class="meta"><h3>9 - Full Side Elevation</h3><p>4.2 m bell, 7.5 m gantry reference and 1.8 m player shown together.</p></div></section>
-  <section class="card wide"><a href="images/structure09-salvage-bell-scale.png" target="_blank" rel="noopener"><img src="images/structure09-salvage-bell-scale.png" alt="Structure 9 isolated scale check"></a><div class="meta"><h3>9 - Dedicated Scale Check</h3><p>Isolated 4.2 m salvage bell, support frame, 1.8 m player and 7.5 m vertical gauge.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 8 <span class="badge">PASS</span></h2><p>Central Stair Core - verified scale - vehicle deck to passenger decks - Wrecker lights only</p></section>
-  <section class="card wide"><a href="images/structure08-stair-core-perspective.png" target="_blank" rel="noopener"><img src="images/structure08-stair-core-perspective.png" alt="Structure 8 central stair core perspective Blender review"></a><div class="meta"><h3>8 - Perspective</h3><p>12 x 8 m stair core with low-clutter ruin geometry and a measured vertical route.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card"><a href="images/structure08-stair-core-side.png" target="_blank" rel="noopener"><img src="images/structure08-stair-core-side.png" alt="Structure 8 full side elevation"></a><div class="meta"><h3>8 - Full Side Elevation</h3><p>Deck levels at 0.0 / 4.8 / 8.0 / 11.2 m; 1.8 m player and 4.8 m gauge shown.</p></div></section>
-  <section class="card"><a href="images/structure08-stair-core-top.png" target="_blank" rel="noopener"><img src="images/structure08-stair-core-top.png" alt="Structure 8 top view"></a><div class="meta"><h3>8 - Top</h3><p>Switchback circulation and landing footprint.</p></div></section>
-  <section class="card wide"><a href="images/structure08-stair-core-scale.png" target="_blank" rel="noopener"><img src="images/structure08-stair-core-scale.png" alt="Structure 8 dedicated scale check"></a><div class="meta"><h3>8 - Dedicated Scale Check</h3><p>1.8 m player; 4.8 m first rise; 1.4 m stair width; 177.8 mm risers; 280 mm treads; 1.05 m handrails.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 7 <span class="badge">PASS</span></h2><p>Vehicle Deck / Hull Breach - corrected scale - low clutter - Wrecker lights only</p></section>
-  <section class="card wide"><a href="images/structure07-vehicle-deck-perspective.png" target="_blank" rel="noopener"><img src="images/structure07-vehicle-deck-perspective.png" alt="Structure 7 vehicle deck perspective Blender review"></a><div class="meta"><h3>7 - Perspective</h3><p>40 x 16 m deck, sparse vehicle cover, hull breach, 4.8 m overhead clearance and 1.8 m player reference.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card"><a href="images/structure07-vehicle-deck-top.png" target="_blank" rel="noopener"><img src="images/structure07-vehicle-deck-top.png" alt="Structure 7 vehicle deck top view"></a><div class="meta"><h3>7 - Top</h3><p>Open central navigation lane with deliberately sparse trucks, trailer, barriers and ramp.</p></div></section>
-  <section class="card"><a href="images/structure07-vehicle-deck-side.png" target="_blank" rel="noopener"><img src="images/structure07-vehicle-deck-side.png" alt="Structure 7 corrected vehicle and player scale side elevation"></a><div class="meta"><h3>7 - Side / Scale Check</h3><p>Player 1.8 m; box truck 3.6 m high; trailer 4.1 m high; overhead clearance 4.8 m.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 6C <span class="badge">PASS</span></h2><p>Shaft Tunnel Ruin - low-clutter underwater stern machinery - Wrecker lights only</p></section>
-  <section class="card wide"><a href="images/structure06c-shaft-tunnel-perspective.png" target="_blank" rel="noopener"><img src="images/structure06c-shaft-tunnel-perspective.png" alt="Structure 6C shaft tunnel perspective Blender review"></a><div class="meta"><h3>6C - Perspective</h3><p>18 m modular shaft line, open bearing housings, broken hull sections, floor grates and 1.8 m player reference.</p><p class="hint">Tap image for full PNG.</p></div></section>
-  <section class="card"><a href="images/structure06c-shaft-tunnel-top.png" target="_blank" rel="noopener"><img src="images/structure06c-shaft-tunnel-top.png" alt="Structure 6C shaft tunnel top view"></a><div class="meta"><h3>6C - Top</h3><p>Clear passage route beside the shaft line and sparse Wrecker lighting.</p></div></section>
-  <section class="card"><a href="images/structure06c-shaft-tunnel-side.png" target="_blank" rel="noopener"><img src="images/structure06c-shaft-tunnel-side.png" alt="Structure 6C shaft tunnel side elevation"></a><div class="meta"><h3>6C - Side</h3><p>Shaft, bearings, wall damage and vertical scale relationship.</p></div></section>
-
-  <section class="group"><h2>Drowned Ferry - Structure 6B <span class="badge">PASS</span></h2><p>Dead Generator / Mechanical Room</p></section>
-  <section class="card wide"><a href="images/structure06b-generator-room-perspective.png" target="_blank" rel="noopener"><img src="images/structure06b-generator-room-perspective.png" alt="Structure 6B generator room perspective"></a><div class="meta"><h3>6B - Perspective</h3><p>Approved Blender composition.</p></div></section>
-  <section class="card"><a href="images/structure06b-generator-room-top.png" target="_blank" rel="noopener"><img src="images/structure06b-generator-room-top.png" alt="Structure 6B top view"></a><div class="meta"><h3>6B - Top</h3><p>Approved.</p></div></section>
-  <section class="card"><a href="images/structure06b-generator-room-side.png" target="_blank" rel="noopener"><img src="images/structure06b-generator-room-side.png" alt="Structure 6B side view"></a><div class="meta"><h3>6B - Side</h3><p>Approved.</p></div></section>
-  <section class="group"><h2>Drowned Ferry - Structure 6A <span class="badge">PASS</span></h2><p>Collapsed Main Engine Hall</p></section>
-  <section class="card wide"><a href="images/structure06a-engine-hall-perspective.png" target="_blank" rel="noopener"><img src="images/structure06a-engine-hall-perspective.png" alt="Structure 6A engine hall perspective"></a><div class="meta"><h3>6A - Perspective</h3><p>Approved Blender composition.</p></div></section>
-  <section class="card"><a href="images/structure06a-engine-hall-top.png" target="_blank" rel="noopener"><img src="images/structure06a-engine-hall-top.png" alt="Structure 6A top view"></a><div class="meta"><h3>6A - Top</h3><p>Approved.</p></div></section>
-  <section class="card"><a href="images/structure06a-engine-hall-side.png" target="_blank" rel="noopener"><img src="images/structure06a-engine-hall-side.png" alt="Structure 6A side view"></a><div class="meta"><h3>6A - Side</h3><p>Approved.</p></div></section>
-
-  <section class="group"><h2>Fabricator Kit <span class="badge">PASS</span></h2><p>Approved Workflow 2.0 companion assets</p></section>
-  <section class="card"><a href="images/marine-crane.png" target="_blank" rel="noopener"><img src="images/marine-crane.png" alt="Marine Crane Blender approval render"></a><div class="meta"><h3>Marine Crane</h3><p>4.36 x 1.52 x 4.50 m - 15,024 tris</p></div></section>
-  <section class="card"><a href="images/floating-work-platform.png" target="_blank" rel="noopener"><img src="images/floating-work-platform.png" alt="Floating Work Platform Blender approval render"></a><div class="meta"><h3>Floating Work Platform</h3><p>6.00 x 6.00 x 3.43 m - 15,626 tris</p></div></section>
-  <section class="card wide"><a href="images/workshop-module-v02.png" target="_blank" rel="noopener"><img src="images/workshop-module-v02.png" alt="Workshop Module V02 Blender approval render"></a><div class="meta"><h3>Workshop Module V02</h3><p>3.20 x 3.12 x 2.68 m - 11,825 tris</p></div></section>
+<section class="banner">
+<h2 style="margin-top:0">Drowned Ferry <span class="badge">FULL REBUILD — PHASE 1</span></h2>
+<p class="muted">The previous ferry environment build has been removed from active production. The rebuild starts with one canonical master ferry exterior, sectional breakdown, deck stack and circulation plan before any interior scene production.</p>
+<p><a href="drowned-ferry-rebuild.html"><strong>Open Drowned Ferry Rebuild Status →</strong></a></p>
+</section>
+<h2>Approved Non-Ferry Assets</h2>
+<div class="grid">
+<section class="card"><a href="images/marine-crane.png" target="_blank" rel="noopener"><img src="images/marine-crane.png" alt="Marine Crane"></a><div class="meta"><h3>Marine Crane</h3><p>Approved Workflow 2.0 companion asset.</p></div></section>
+<section class="card"><a href="images/floating-work-platform.png" target="_blank" rel="noopener"><img src="images/floating-work-platform.png" alt="Floating Work Platform"></a><div class="meta"><h3>Floating Work Platform</h3><p>Approved Workflow 2.0 companion asset.</p></div></section>
+<section class="card wide"><a href="images/workshop-module-v02.png" target="_blank" rel="noopener"><img src="images/workshop-module-v02.png" alt="Workshop Module V02"></a><div class="meta"><h3>Workshop Module V02</h3><p>Approved Workflow 2.0 companion asset.</p></div></section>
+</div>
 </main>
-<footer>Topside - Asset Workflow 2.0 review gallery</footer>
+<footer>Topside — Asset Workflow 2.0 review gallery</footer>
 </body>
 </html>

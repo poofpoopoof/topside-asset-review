@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside — Drowned Ferry Rebuild</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1100px;margin:auto;padding:24px 18px}.sub,.note{color:#aeb8c0;line-height:1.55}
+h1,h2{margin:0 0 8px}.phase{background:#191e23;border:1px solid #2c343c;border-radius:14px;padding:16px;margin:14px 0}
+.done{border-color:#3b5744}.active{border-color:#6b5a24}.future{opacity:.8}
+.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+a{color:#9fd5ff}ol{line-height:1.65}
+</style>
+</head>
+<body>
+<header>
+<h1>Drowned Ferry — Full Environment Rebuild <span class="badge">RESET</span></h1>
+<p class="sub">Previous ferry environment geometry, production maps and numbered scene builds have been removed from active production and archived outside Unreal's active content paths.</p>
+<p><a href="index.html">← Main Asset Review</a></p>
+</header>
+<main><section class="phase done">
+<h2>Reset <span class="badge">COMPLETE</span></h2>
+<p class="note">Old AssetFactory ferry structures, production ferry structures, ferry-specific Unreal AssetFactory content, Northstar world-design ferry, representative ferry kit/maps, and old environment review documentation are out of active production.</p>
+</section>
+<section class="phase active">
+<h2>Phase 1 — Canonical Master Ferry <span class="badge">NEXT</span></h2>
+<p class="note">Establish one exterior silhouette and structural truth model: hull, superstructure, deck stack, bow/stern orientation, major openings and overall real-world scale. No interior hero scenes yet.</p>
+</section>
+<section class="phase future">
+<h2>Phase 2 — Sectional Breakdown</h2>
+<p class="note">Divide the master vessel into reusable bow, forward-midship, central-midship, aft-midship, stern and upper-superstructure exterior sections. Lock section seams and deck elevations.</p>
+</section>
+<section class="phase future">
+<h2>Phase 3 — Shared Ferry Structural Kit</h2>
+<p class="note">Create reusable ribs, shell plates, bulkheads, decks, stairs, catwalks, railings, hatches, doors, supports, ducting and damage variants.</p>
+</section><section class="phase future">
+<h2>Phase 4 — Internal Scene Slots</h2>
+<p class="note">Only after the exterior/deck stack is approved: assign internal scene zones to exact locations in the vessel. Each room/POI inherits the master ferry's dimensions, deck elevation, access points and adjacent spaces.</p>
+</section>
+<section class="phase future">
+<h2>Phase 5 — Modular Internal Scenes</h2>
+<p class="note">Every scene is assembled from multiple reusable components. No one-piece room meshes. Meshy image-to-3D is used for visible hero components; Blender provides cleanup, exact scale, modular assembly and precision gameplay backbones where required.</p>
+</section>
+<section class="phase future">
+<h2>Phase 6 — Unreal Assembly / QA</h2>
+<p class="note">Import approved modules, assemble sectional exterior first, then interiors. Validate walking clearance, collision, pivots, scale, section seams, route continuity and performance before lookdev.</p>
+</section>
+<h2>Permanent Build Rules</h2>
+<ol>
+<li>Exterior master vessel comes before interior POIs.</li>
+<li>One scene is always built from several components.</li>
+<li>No whole-room Meshy generation and no non-uniform stretching to force a scene into scale.</li>
+<li>Normal ferry traversal is walking unless a specific area is explicitly designated as a swim section.</li>
+<li>1.8 m player reference; normal walking review target at least 1.2 m clear width × 2.2 m clear height.</li>
+<li>Geometry and scale first. Shaders/material polish are a later pass.</li>
+<li>No new numbered interior structure until the master ferry section/deck location is approved.</li>
+</ol>
+</main>
+</body>
+</html>
