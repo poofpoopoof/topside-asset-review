@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A V04</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2,h3{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+.pass{background:#25462f;color:#c9ffd7}.hold{background:#612d2d;color:#ffd1d1}a{color:#9fd5ff}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}
+.card img{width:100%;display:block}.meta{padding:10px 12px}.pair{background:#191e23;border:1px solid #2c343c;border-radius:12px;padding:10px}
+.pairgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.pair img{width:100%;display:block;border-radius:7px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head><body>
+<header>
+<h1>Drowned Ferry — Section A Bow V04 <span class="badge">AWAITING APPROVAL</span></h1>
+<p class="sub">Structural redesign after V03 FAIL. V04 removes the repeated hull-tile approach and uses one passed Meshy half-hull mirrored across the centerline: two coherent hull pieces total around a precision Blender bow frame.</p>
+<p><a href="index.html">← Main Asset Review</a></p>
+</header><main><h2>Clean Bow Assembly</h2>
+<p class="note">This review intentionally removes windlass, doors, torn plates and railing clutter. The only goal is hull silhouette, hull/frame position, scale and coherence.</p>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v04-perspective.png" target="_blank"><img src="images/section-a-v04-perspective.png"></a><div class="meta"><b>Perspective</b><br><span class="note">Two large hull halves + precision frame/decks only.</span></div></div>
+<div class="card wide"><a href="images/section-a-v04-reverse.png" target="_blank"><img src="images/section-a-v04-reverse.png"></a><div class="meta"><b>Reverse</b></div></div>
+<div class="card"><a href="images/section-a-v04-side.png" target="_blank"><img src="images/section-a-v04-side.png"></a><div class="meta"><b>Side / Profile</b></div></div>
+<div class="card"><a href="images/section-a-v04-top.png" target="_blank"><img src="images/section-a-v04-top.png"></a><div class="meta"><b>Top</b></div></div>
+<div class="card wide"><a href="images/section-a-v04-walk-scale.png" target="_blank"><img src="images/section-a-v04-walk-scale.png"></a><div class="meta"><b>Walk / Scale</b><br><span class="note">1.8 m player and precision deck/clearance backbone remain authoritative.</span></div></div>
+</div><h2>Hull Meshy Source</h2>
+<div class="pair">
+<h3>Starboard Half-Hull <span class="badge pass">SHAPE QA PASS</span></h3>
+<div class="pairgrid">
+<a href="images/section-a-v04-ref-half-perspective.png" target="_blank"><img src="images/section-a-v04-ref-half-perspective.png"></a>
+<a href="images/section-a-v04-clean-half.png" target="_blank"><img src="images/section-a-v04-clean-half.png"></a>
+<a href="images/section-a-v04-ref-half-profile.png" target="_blank"><img src="images/section-a-v04-ref-half-profile.png"></a>
+<a href="images/section-a-v04-ref-half-top.png" target="_blank"><img src="images/section-a-v04-ref-half-top.png"></a>
+</div>
+<p class="note">Exact Blender reference: 11 × 9 × 13.8 m. Cleaned Meshy output: 10.692 × 8.301 × 13.8 m, uniform scale only. Normalized shape error max ≈ 5.1%. The port hull is a true mirrored mesh copy, so it faces the opposite direction instead of repeating the same orientation.</p>
+</div><h2 style="margin-top:28px">V04 QA</h2>
+<p class="note">
+Visible hull pieces: <b>2</b>.<br>
+Longitudinal repeated hull tiles: <b>0</b>.<br>
+Visible beam: <b>17.296 m</b> against ~18 m master.<br>
+Precision bow frame: <b>inside hull beam and height envelope</b>.<br>
+Meshy half-hull shape QA: <b>PASS</b>.<br>
+Earlier panel/upper-hull generations that failed proportion checks remain held and are not assembled.<br>
+Railing remains HOLD / regenerate.<br>
+No production shaders. No Unreal import.
+</p>
+<h2>Current Gate</h2>
+<p class="note"><b>Review only the hull + frame relationship.</b> If this reads correctly as one coherent ferry bow, the next pass can add the accepted windlass/door components and controlled damage without returning to the repeated plate approach.</p>
+</main></body></html>
