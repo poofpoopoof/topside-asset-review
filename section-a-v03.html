@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside — Drowned Ferry Section A V03</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2,h3{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+.hold{background:#612d2d;color:#ffd1d1}.pass{background:#25462f;color:#c9ffd7}a{color:#9fd5ff}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}
+.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}.card img{width:100%;display:block;height:auto}
+.meta{padding:10px 12px}.meta b{display:block}.meta span{font-size:14px;color:#adb8c1}
+.pairs{display:grid;grid-template-columns:1fr;gap:12px}.pair{background:#191e23;border:1px solid #2c343c;border-radius:12px;padding:10px}
+.pairgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.pair img{display:block;width:100%;border-radius:7px}.pair h3{font-size:17px;margin:4px 0 8px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}.pairs{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header>
+<h1>Drowned Ferry — Section A Bow V03 <span class="badge">AWAITING APPROVAL</span></h1>
+<p class="sub">Workflow 2.0 fit-correction review: passed V02 Meshy assets reused; Blender orientation, placement and seam fit corrected. V01 remains only the precision structural/collision backbone.</p>
+<p><a href="index.html">← Main Asset Review</a></p>
+</header><main>
+<h2>Assembled Meshy + Blender Review</h2>
+<p class="note">Full Section A bow-end volume. V03 corrects the V02 clipping/fit issues without regenerating the passed Meshy assets. Automated Meshy-to-Meshy bounding-box audit reports zero overlaps. No production shaders and no Unreal import.</p>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v03-perspective.png" target="_blank"><img src="images/section-a-v03-perspective.png"></a><div class="meta"><b>Perspective</b><span>Meshy hull plates, bow portal, windlass, watertight doors and torn-plate variants assembled over the precision backbone.</span></div></div>
+<div class="card wide"><a href="images/section-a-v03-reverse.png" target="_blank"><img src="images/section-a-v03-reverse.png"></a><div class="meta"><b>Reverse</b><span>Opposite side of the full bow-end assembly.</span></div></div>
+<div class="card"><a href="images/section-a-v03-side.png" target="_blank"><img src="images/section-a-v03-side.png"></a><div class="meta"><b>Side / Profile</b><span>Silhouette and locked 11 m section-length relationship.</span></div></div>
+<div class="card"><a href="images/section-a-v03-top.png" target="_blank"><img src="images/section-a-v03-top.png"></a><div class="meta"><b>Top</b><span>18 m master beam envelope and modular plate placement.</span></div></div>
+<div class="card wide"><a href="images/section-a-v03-walk-scale.png" target="_blank"><img src="images/section-a-v03-walk-scale.png"></a><div class="meta"><b>Walk / Scale Cutaway</b><span>Port shell hidden for review. 1.8 m player, 9 m vehicle deck, 1.5 m stair width and 1.2 × 2.2 m clearance gauges remain precision authority.</span></div></div>
+</div>
+<h2>Meshy Components — Reference vs Cleaned Blender Output</h2>
+<p class="note">Each visible component was generated separately so we can regenerate or replace one bad piece without rebuilding the scene.</p>
+<div class="pairs"><div class="pair"><h3>Hull Plate <span class="badge pass">USED</span></h3><div class="pairgrid"><a href="images/section-a-ref-hullplate.png"><img src="images/section-a-ref-hullplate.png"></a><a href="images/section-a-clean-hullplate.png"><img src="images/section-a-clean-hullplate.png"></a></div><p class="note">Reference → cleaned Meshy output. 5.5 × 1.09 × 5.146 m; 12,513 tris.</p></div>
+<div class="pair"><h3>Bow Portal Frame <span class="badge pass">USED</span></h3><div class="pairgrid"><a href="images/section-a-ref-bowportal.png"><img src="images/section-a-ref-bowportal.png"></a><a href="images/section-a-clean-bowportal.png"><img src="images/section-a-clean-bowportal.png"></a></div><p class="note">8.5 × 1.689 × 8.251 m; 14,788 tris.</p></div>
+<div class="pair"><h3>Anchor Windlass <span class="badge pass">USED</span></h3><div class="pairgrid"><a href="images/section-a-ref-windlass.png"><img src="images/section-a-ref-windlass.png"></a><a href="images/section-a-clean-windlass.png"><img src="images/section-a-clean-windlass.png"></a></div><p class="note">3.4 × 1.879 × 1.504 m; 11,833 tris.</p></div>
+<div class="pair"><h3>Watertight Door <span class="badge pass">USED</span></h3><div class="pairgrid"><a href="images/section-a-ref-door.png"><img src="images/section-a-ref-door.png"></a><a href="images/section-a-clean-door.png"><img src="images/section-a-clean-door.png"></a></div><p class="note">1.453 × 0.389 × 2.4 m; 7,379 tris.</p></div>
+<div class="pair"><h3>Torn Hull Plate <span class="badge pass">USED</span></h3><div class="pairgrid"><a href="images/section-a-ref-tornplate.png"><img src="images/section-a-ref-tornplate.png"></a><a href="images/section-a-clean-tornplate.png"><img src="images/section-a-clean-tornplate.png"></a></div><p class="note">2.44 × 0.956 × 3.6 m; 9,746 tris.</p></div>
+<div class="pair"><h3>Railing <span class="badge hold">HOLD / REGENERATE</span></h3><div class="pairgrid"><a href="images/section-a-ref-railing.png"><img src="images/section-a-ref-railing.png"></a><a href="images/section-a-clean-railing.png"><img src="images/section-a-clean-railing.png"></a></div><p class="note">Natural Meshy result is 3.2 × 0.456 × 1.738 m, too tall for the approved ~1.05 m marine railing. It is intentionally not used; no non-uniform stretching.</p></div>
+</div><h2 style="margin-top:28px">Current Gate</h2>
+<p class="note"><b>Game Director geometry + fit review only.</b> V03 reuses the passed Meshy assets and corrects rotation/placement/seams in Blender. Automated overlap audit: zero Meshy-to-Meshy AABB intersections. PASS / FAIL / changes here before Unreal. The railing remains quarantined for regeneration.</p>
+</main>
+</body>
+</html>
