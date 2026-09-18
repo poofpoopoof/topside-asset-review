@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A V08 Full Meshy Shell</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2,h3{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+.hold{background:#612d2d;color:#ffd1d1}.pass{background:#25462f;color:#c9ffd7}a{color:#9fd5ff}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}
+.card img{width:100%;display:block}.meta{padding:10px 12px}.qa{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 26px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head><body>
+<header><h1>Drowned Ferry — Section A V08 <span class="badge">FULL MESHY SHELL REVIEW</span></h1>
+<p class="sub">Experimental full exterior-shell approach. Gate-A Blender hull remains the approved scale/silhouette authority and internal structure remains separate. The visible exterior shell is Meshy-produced, then damaged directly in Blender.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v05-gate-a.html">Gate A PASS</a></p></header><main>
+<div class="qa"><b>Important production result</b>
+<p class="note">Free-form Meshy image-to-3D reconstruction could not preserve the locked ferry proportions closely enough and was held. V08 therefore uses Meshy's 3D remesh of the exact Gate-A hull as the full visible shell base. Blender applies one uniform scale/center fit only, then adds real geometric dents, waviness, small perforation holes and chipped hard edges to that Meshy shell.</p></div><h2>Whole Bow</h2><div class="grid">
+<div class="card wide"><a href="images/section-a-v08-full-shell-perspective.png"><img src="images/section-a-v08-full-shell-perspective.png"></a><div class="meta"><b>Extra-Wide Perspective</b></div></div>
+<div class="card wide"><a href="images/section-a-v08-full-shell-reverse.png"><img src="images/section-a-v08-full-shell-reverse.png"></a><div class="meta"><b>Extra-Wide Reverse</b></div></div>
+<div class="card wide"><a href="images/section-a-v08-full-shell-bow.png"><img src="images/section-a-v08-full-shell-bow.png"></a><div class="meta"><b>Bow / Front</b></div></div>
+<div class="card"><a href="images/section-a-v08-full-shell-port-profile.png"><img src="images/section-a-v08-full-shell-port-profile.png"></a><div class="meta"><b>Port Profile</b></div></div>
+<div class="card"><a href="images/section-a-v08-full-shell-starboard-profile.png"><img src="images/section-a-v08-full-shell-starboard-profile.png"></a><div class="meta"><b>Starboard Profile</b></div></div>
+<div class="card wide"><a href="images/section-a-v08-full-shell-top.png"><img src="images/section-a-v08-full-shell-top.png"></a><div class="meta"><b>Top / Plan</b></div></div>
+</div>
+<h2>Surface Damage</h2><div class="grid">
+<div class="card wide"><a href="images/section-a-v08-full-shell-port-damage.png"><img src="images/section-a-v08-full-shell-port-damage.png"></a><div class="meta"><b>Port Damage</b><br><span class="note">Waviness + local dents + true shell perforations + chipped profile edges.</span></div></div>
+<div class="card wide"><a href="images/section-a-v08-full-shell-starboard-damage.png"><img src="images/section-a-v08-full-shell-starboard-damage.png"></a><div class="meta"><b>Starboard Damage</b></div></div>
+</div><h2>Gate-A Envelope Comparison</h2>
+<p class="note">Yellow wire = PASSED Gate-A authority. Gray = visible Meshy full shell. This is included because Meshy remesh changes the envelope slightly even after uniform-scale fit.</p>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v08-envelope-compare-perspective.png"><img src="images/section-a-v08-envelope-compare-perspective.png"></a><div class="meta"><b>Perspective Comparison</b></div></div>
+<div class="card wide"><a href="images/section-a-v08-envelope-compare-port.png"><img src="images/section-a-v08-envelope-compare-port.png"></a><div class="meta"><b>Port/Profile Comparison</b></div></div>
+</div>
+<h2>Reference / Meshy Source</h2><div class="grid">
+<div class="card"><img src="images/section-a-v08-reference-port.png"><div class="meta"><b>Gate-A isolated port reference</b></div></div>
+<div class="card"><img src="images/section-a-v08-reference-bow.png"><div class="meta"><b>Gate-A isolated bow reference</b></div></div>
+<div class="card"><img src="images/section-a-v08-reference-top.png"><div class="meta"><b>Gate-A isolated top reference</b></div></div>
+<div class="card"><img src="images/section-a-v08-meshy-remesh-thumbnail.png"><div class="meta"><b>Meshy remesh result</b></div></div>
+</div><h2>V08 QA</h2><p class="note">
+Visible shell source: <b>Meshy remesh task 01a0b6c1-1e0a-75f6-88ca-9421d43cd0c2</b>.<br>
+Gate-A bounds: <b>11.018 × 18.198 × 12.954 m</b>.<br>
+Meshy shell after uniform fit: <b>10.408 × 18.924 × 12.359 m</b>.<br>
+Envelope drift: roughly <b>4–6%</b> by axis; mean surface error ≈ <b>0.386 m</b> before the local damage pass.<br>
+Review shell density: <b>~30k faces</b> after decimation.<br>
+Global shell waviness: <b>~2.7 cm peak</b>.<br>
+Localized dents: <b>9</b>.<br>
+Jagged perforation holes: <b>6</b>.<br>
+Hard profile-edge chips: <b>4</b>.<br>
+Production shaders: <b>NO</b>.<br>
+Unreal import: <b>NO</b>.
+</p>
+<h2>Current Gate</h2><p class="note"><b>PASS / FAIL / changes on the full-shell direction.</b> The key question is whether this finally gives you the irregular damaged shell language you wanted without losing too much of the passed ferry bow identity.</p>
+</main></body></html>

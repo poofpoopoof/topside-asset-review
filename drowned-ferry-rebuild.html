@@ -16,13 +16,13 @@ h1,h2{margin:0 0 8px}.phase{background:#191e23;border:1px solid #2c343c;border-r
 <body>
 <header>
 <h1>Drowned Ferry — MASTER-01B Rebuild <span class="badge">PHASE 8</span></h1>
-<p class="sub">Older Coastal Ferry master locked at approximately 110 m × 18 m. Section A V05 Gate A PASSED and remains the structural authority. The Game Director authorized a bounded experiment replacing only the visible Section-A exterior shell with one continuous Meshy-generated damaged skin. V07 failed envelope QA; regenerated V08 is the active review.</p>
-<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-full-shell-v08.html"><strong>Open Full Meshy Shell V08 Review →</strong></a></p>
+<p class="sub">Older Coastal Ferry master locked at approximately 110 m × 18 m. Section A V05 Gate A PASSED and remains the structural authority. The active V08 experiment uses a full Meshy remesh exterior shell over that locked structure, then adds real geometric waviness, dents, perforation holes and chipped hard edges in Blender.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v08-full-shell.html"><strong>Open V08 Full Meshy Shell Damage Review →</strong></a></p>
 </header>
 <main>
 <section class="phase done"><h2>Phases 1–7 <span class="badge pass">PASSED</span></h2>
 <p class="note">MASTER-01B exterior selection and scale, A–G exterior sections, deck/circulation anatomy, Shared Ferry Structural Kit, A1–G3 internal scene slots, and section-specific modular-kit plans are locked.</p></section><section class="phase active"><h2>Phase 8 — Blender Assembly / Game Director Review <span class="badge">ACTIVE</span></h2>
-<p class="note">Section A V05 Gate A PASSED and remains unchanged underneath. V08 is one continuous Meshy outer hull skin over the separate Blender decks/frames/stairs. It fits the Gate-A envelope within 6.5% max AABB error using uniform scale only and preserves the corrected bow-to-aft taper. No Unreal import until this review passes.</p></section>
+<p class="note">Section A V05 Gate A PASSED and remains unchanged underneath as authority/collision. V08's visible shell comes from Meshy remesh of that hull, then is uniformly scaled/centered and damaged directly in Blender. The Meshy remesh still drifts roughly 4–6% by bounding-box axis, so the review includes a yellow Gate-A wire-envelope comparison. No Unreal import until this review passes.</p></section>
 <section class="phase future"><h2>Phase 9 — Unreal Isolated QA</h2>
 <p class="note">After approval, import the reviewed section/components into isolated Unreal QA and verify scale, collision, pivots, seams, traversal and performance.</p></section>
 <section class="phase future"><h2>Phase 10 — Materials / Atmosphere / Lighting</h2>
