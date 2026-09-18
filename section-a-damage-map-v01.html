@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A Damage Map V01</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1280px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2,h3{margin:0 0 8px}a{color:#9fd5ff}
+.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 24px}
+.key{display:flex;align-items:center;gap:7px;background:#171c21;border:1px solid #2d353d;border-radius:8px;padding:7px 10px;font-size:14px}
+.swatch{width:18px;height:12px;border-radius:2px}.remove{background:rgba(235,64,52,.65)}.protect{background:rgba(42,193,190,.3);border:2px dashed #55e2de;box-sizing:border-box}.rib{background:#ffd54f}.peel{background:#ff9f43}
+.board{position:relative;background:#0b0e11;border:1px solid #2c343c;border-radius:14px;overflow:hidden;margin:14px 0 34px}
+.board img{display:block;width:100%;height:auto}.board svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.caption{padding:12px 14px;background:#191e23;border-top:1px solid #2c343c}
+.noteBox{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 24px}
+.zone{fill:rgba(235,64,52,.32);stroke:#ff5147;stroke-width:4}
+.protectZone{fill:rgba(42,193,190,.10);stroke:#55e2de;stroke-width:4;stroke-dasharray:14 10}
+.ribLine{stroke:#ffd54f;stroke-width:8;stroke-linecap:round}
+.peelLine{stroke:#ff9f43;stroke-width:7;stroke-linecap:round}
+.labelBg{fill:rgba(8,10,12,.82);stroke:rgba(255,255,255,.25);stroke-width:1}
+.labelText{fill:white;font:700 25px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.smallText{fill:white;font:700 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+@media(max-width:700px){.labelText{font-size:30px}.smallText{font-size:24px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Drowned Ferry — Section A Damage Map V01 <span class="badge">2D DESIGN GATE</span></h1>
+<p class="sub">This is the PASSED V05 Gate-A bow with proposed damage topology drawn on top. No 3D damage from Gate-B V01–V04 is being carried forward automatically. Approve or change this map first; only then will the next Blender/Meshy damage pass be built.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v05-gate-a.html">Gate A PASS reference</a></p>
+</header>
+<main>
+<div class="legend">
+<div class="key"><span class="swatch remove"></span> RED = remove hull plating / open field</div>
+<div class="key"><span class="swatch protect"></span> CYAN = preserve intact</div>
+<div class="key"><span class="swatch rib"></span> YELLOW = expose structural rib/stringer</div>
+<div class="key"><span class="swatch peel"></span> ORANGE = peel / tear direction</div>
+</div>
+<div class="noteBox"><b>Damage intent:</b><span class="note"> major readable plating loss, not scattered bullet-hole damage. Keep the bow stem, keel/lower silhouette, and A/B connection structurally legible. The red zones are intended as broad missing-shell fields with irregular surviving islands and torn partial edges—not clean cutouts.</span></div>
+<h2>Port Side — Primary Damage Plan</h2>
+<div class="board" data-view="port">
+<img src="images/section-a-damage-map-v01-port.png" alt="Port damage map">
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet"></svg>
+<div class="caption"><b>Port:</b> one dominant mid-side plating-loss field plus a lower/aft tear. Two major ribs should remain visible through the open field. Stem and lower keel line stay intact.</div>
+</div>
+
+<h2>Starboard Side — Primary Damage Plan</h2>
+<div class="board" data-view="starboard">
+<img src="images/section-a-damage-map-v01-starboard.png" alt="Starboard damage map">
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet"></svg>
+<div class="caption"><b>Starboard:</b> one large aft/upper plating-loss field and one forward tear. Three ribs should show through. Keep the outer stem and lower silhouette readable.</div>
+</div>
+
+<h2>Three-Quarter Context</h2>
+<div class="board" data-view="perspective">
+<img src="images/section-a-damage-map-v01-perspective.png" alt="Three-quarter damage map">
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet"></svg>
+<div class="caption">Context only. Use the orthographic side maps above as the actual placement authority.</div>
+</div>
+<div class="noteBox">
+<b>Proposed structural rules if this map passes:</b>
+<p class="note">The damage will be built from the Gate-A hull itself. Major red fields become actual missing plating; ribs/stringers remain precision Blender structure behind them; torn lips are partial and derived from the exact hull boundary; Meshy is used only for small attached remnants/debris after the structural loss matches this map.</p>
+</div>
+<h2>Current Gate</h2>
+<p class="note"><b>PASS / FAIL / mark changes on the 2D damage layout only.</b> Once this map passes, the next Gate-B build will follow these zones instead of improvising damage in 3D.</p>
+</main>
+<script>
+(async()=>{
+  const data=await (await fetch('damage-design-v01.json?rev=1')).json();
+  const NS='http://www.w3.org/2000/svg';
+  function el(tag,attrs={}){const n=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))n.setAttribute(k,v);return n}
+  function pts(arr){return arr.map(p=>p.join(',')).join(' ')}
+  function label(svg,x,y,text,small=false){
+    const w=Math.max(160,text.length*(small?12:14)+28),h=small?34:42;
+    const g=el('g');g.appendChild(el('rect',{x:x-w/2,y:y-h/2,width:w,height:h,rx:7,class:'labelBg'}));
+    const t=el('text',{x,y:y+7,'text-anchor':'middle',class:small?'smallText':'labelText'});t.textContent=text;g.appendChild(t);svg.appendChild(g);
+  }
+  function render(board){
+    const view=board.dataset.view,svg=board.querySelector('svg'),v=data.views[view];
+    const defs=el('defs');
+    const marker=el('marker',{id:'arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto-start-reverse'});
+    marker.appendChild(el('path',{d:'M 0 0 L 10 5 L 0 10 z',fill:'#ff9f43'}));defs.appendChild(marker);svg.appendChild(defs);
+    const zoneKeys=view==='port'?['P1_MAJOR_PORT','P2_AFT_LOWER']:view==='starboard'?['S1_MAJOR_STARBOARD','S2_FORWARD_STARBOARD']:Object.keys(v.zones);
+    zoneKeys.forEach(k=>{const z=v.zones[k];svg.appendChild(el('polygon',{points:pts(z.points),class:'zone'}));label(svg,z.centroid[0],z.centroid[1],z.label,false)});
+    Object.values(v.protect).forEach(z=>{svg.appendChild(el('polygon',{points:pts(z.points),class:'protectZone'}));label(svg,z.centroid[0],z.centroid[1],z.label,true)});
+    v.ribs.forEach(r=>{svg.appendChild(el('line',{x1:r.a[0],y1:r.a[1],x2:r.b[0],y2:r.b[1],class:'ribLine'}));label(svg,(r.a[0]+r.b[0])/2,(r.a[1]+r.b[1])/2,r.label,true)});
+    v.arrows.forEach(a=>{svg.appendChild(el('line',{x1:a.a[0],y1:a.a[1],x2:a.b[0],y2:a.b[1],class:'peelLine','marker-end':'url(#arrow)'}));label(svg,(a.a[0]+a.b[0])/2,(a.a[1]+a.b[1])/2-18,a.label,true)});
+  }
+  document.querySelectorAll('.board').forEach(render);
+})();
+</script>
+</body></html>
