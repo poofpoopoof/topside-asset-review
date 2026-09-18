@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A Damage Map V02</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1280px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2{margin:0 0 8px}a{color:#9fd5ff}
+.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 24px}
+.key{display:flex;align-items:center;gap:7px;background:#171c21;border:1px solid #2d353d;border-radius:8px;padding:7px 10px;font-size:14px}
+.swatch{width:18px;height:12px;border-radius:2px}.remove{background:rgba(235,64,52,.65)}.protect{background:rgba(42,193,190,.3);border:2px dashed #55e2de;box-sizing:border-box}.island{background:rgba(80,200,120,.55)}.rib{background:#ffd54f}.peel{background:#ff9f43}
+.board{position:relative;background:#0b0e11;border:1px solid #2c343c;border-radius:14px;overflow:hidden;margin:14px 0 34px}
+.board img{display:block;width:100%;height:auto}.board svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.caption{padding:12px 14px;background:#191e23;border-top:1px solid #2c343c}
+.noteBox{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 24px}
+.zone{fill:rgba(235,64,52,.30);stroke:#ff5147;stroke-width:4}
+.islandZone{fill:rgba(80,200,120,.36);stroke:#62e695;stroke-width:4}
+.protectZone{fill:rgba(42,193,190,.10);stroke:#55e2de;stroke-width:4;stroke-dasharray:14 10}
+.ribLine{stroke:#ffd54f;stroke-width:8;stroke-linecap:round}.peelLine{stroke:#ff9f43;stroke-width:7;stroke-linecap:round}
+.labelBg{fill:rgba(8,10,12,.84);stroke:rgba(255,255,255,.25);stroke-width:1}.labelText{fill:white;font:700 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.smallText{fill:white;font:700 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+@media(max-width:700px){.labelText{font-size:30px}.smallText{font-size:24px}}
+</style></head>
+<body>
+<header>
+<h1>Drowned Ferry — Section A Damage Map V02 <span class="badge">2D REVISION GATE</span></h1>
+<p class="sub">V01 translated into too much shell loss in 3D. V02 deliberately reduces the loss fields, preserves much more continuous hull, adds surviving plate islands inside the main casualty zones, and exposes fewer ribs at once.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-damage-map-v01.html">Damage Map V01</a> &nbsp; <a href="section-a-v05-gate-a.html">Gate A PASS</a></p>
+</header>
+<main>
+<div class="legend">
+<div class="key"><span class="swatch remove"></span> RED = remove hull plating</div>
+<div class="key"><span class="swatch island"></span> GREEN = surviving plate island / shell stays</div>
+<div class="key"><span class="swatch protect"></span> CYAN = protected intact structure</div>
+<div class="key"><span class="swatch rib"></span> YELLOW = selected exposed rib</div>
+<div class="key"><span class="swatch peel"></span> ORANGE = peel direction</div>
+</div>
+<div class="noteBox"><b>V02 target:</b><span class="note"> the ship should still read as a ferry hull first. Damage is concentrated into one major casualty field plus one smaller tear per side. Continuous shell remains around and between the openings, and green plate islands survive inside the main fields so the decks do not become floating slabs.</span></div>
+
+<h2>Port Side</h2>
+<div class="board" data-view="port"><img src="images/section-a-damage-map-v02-port.png"><svg viewBox="0 0 1600 900"></svg>
+<div class="caption">Port: reduced P1 major field + small P2 lower tear. Two surviving plate islands remain inside P1. Only two ribs are deliberately exposed.</div></div>
+
+<h2>Starboard Side</h2>
+<div class="board" data-view="starboard"><img src="images/section-a-damage-map-v02-starboard.png"><svg viewBox="0 0 1600 900"></svg>
+<div class="caption">Starboard: reduced S1 major field + smaller S2 forward tear. Two surviving plate islands remain in S1. Only two ribs are deliberately exposed.</div></div>
+
+<h2>Three-Quarter Context</h2>
+<div class="board" data-view="perspective"><img src="images/section-a-damage-map-v02-perspective.png"><svg viewBox="0 0 1600 900"></svg>
+<div class="caption">Context only. Port/starboard orthographic maps are the placement authority.</div></div>
+
+<div class="noteBox"><b>Do not build 3D yet.</b><p class="note">PASS / FAIL / changes on this V02 map first. If V02 passes, the next 3D trial will implement only these smaller red fields while explicitly preserving the green plate islands and cyan protected regions.</p></div>
+</main>
+<script>
+(async()=>{
+ const data=await (await fetch('damage-design-v02.json?rev=1')).json(),NS='http://www.w3.org/2000/svg';
+ const E=(t,a={})=>{const n=document.createElementNS(NS,t);for(const[k,v]of Object.entries(a))n.setAttribute(k,v);return n};
+ const P=a=>a.map(p=>p.join(',')).join(' ');
+ function label(svg,x,y,text,small=false){const w=Math.max(160,text.length*(small?11:13)+26),h=small?32:40,g=E('g');g.appendChild(E('rect',{x:x-w/2,y:y-h/2,width:w,height:h,rx:7,class:'labelBg'}));const t=E('text',{x,y:y+7,'text-anchor':'middle',class:small?'smallText':'labelText'});t.textContent=text;g.appendChild(t);svg.appendChild(g)}
+ function render(board){
+   const v=data.views[board.dataset.view],svg=board.querySelector('svg'),defs=E('defs'),m=E('marker',{id:'arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto-start-reverse'});m.appendChild(E('path',{d:'M 0 0 L 10 5 L 0 10 z',fill:'#ff9f43'}));defs.appendChild(m);svg.appendChild(defs);
+   Object.values(v.zones).forEach(z=>{svg.appendChild(E('polygon',{points:P(z.points),class:'zone'}));label(svg,z.centroid[0],z.centroid[1],z.label,false)});
+   Object.values(v.islands).forEach(z=>{svg.appendChild(E('polygon',{points:P(z.points),class:'islandZone'}));label(svg,z.centroid[0],z.centroid[1],z.label,true)});
+   Object.values(v.protect).forEach(z=>{svg.appendChild(E('polygon',{points:P(z.points),class:'protectZone'}));label(svg,z.centroid[0],z.centroid[1],z.label,true)});
+   v.ribs.forEach(r=>{svg.appendChild(E('line',{x1:r.a[0],y1:r.a[1],x2:r.b[0],y2:r.b[1],class:'ribLine'}));label(svg,(r.a[0]+r.b[0])/2,(r.a[1]+r.b[1])/2,'EXPOSE RIB',true)});
+   v.arrows.forEach(a=>{svg.appendChild(E('line',{x1:a.a[0],y1:a.a[1],x2:a.b[0],y2:a.b[1],class:'peelLine','marker-end':'url(#arrow)'}));label(svg,(a.a[0]+a.b[0])/2,(a.a[1]+a.b[1])/2-18,a.label,true)});
+ }
+ document.querySelectorAll('.board').forEach(render);
+})();
+</script>
+</body></html>
