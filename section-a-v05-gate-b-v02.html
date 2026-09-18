@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A V05 Gate B V02</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2,h3{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+.pass{background:#25462f;color:#c9ffd7}.fail{background:#612d2d;color:#ffd1d1}a{color:#9fd5ff}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}
+.card img{width:100%;display:block}.meta{padding:10px 12px}.qa{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 26px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head>
+<body><header>
+<h1>Drowned Ferry — Section A V05 Gate B V02 <span class="badge">ALIGNMENT CORRECTION</span></h1>
+<p class="sub">Gate A remains PASSED and locked. Gate-B V01 damage placement FAILED because Meshy damage pieces were hand-rotated instead of aligned to the curved hull. V02 reuses the same Meshy assets but snaps them mathematically to the actual Gate-A shell surface.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v05-gate-a.html">Gate A PASS</a> &nbsp; <a href="section-a-v05-gate-b.html">Gate B V01 failed placement</a></p>
+</header><main>
+<div class="qa">
+<b>Alignment QA</b>
+<p class="note">Every used Meshy damage asset is placed from the actual Gate-A hull surface point. Its thin local Y axis is aligned to the local hull normal; its long/vertical axes are tangent to the shell; the center is offset outward using its true thickness.</p>
+<p class="note">All four placements: <b>thin-axis dot normal = 1.00000</b>; tangent axes dot normal = <b>0.00000</b>. No eyeballed Euler placement.</p>
+</div><h2>Extra-Wide Assembly</h2>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v05b2-extra-wide-perspective.png" target="_blank"><img src="images/section-a-v05b2-extra-wide-perspective.png"></a><div class="meta"><b>Extra-Wide Perspective</b></div></div>
+<div class="card wide"><a href="images/section-a-v05b2-extra-wide-reverse.png" target="_blank"><img src="images/section-a-v05b2-extra-wide-reverse.png"></a><div class="meta"><b>Extra-Wide Reverse</b></div></div>
+<div class="card wide"><a href="images/section-a-v05b2-bow-front.png" target="_blank"><img src="images/section-a-v05b2-bow-front.png"></a><div class="meta"><b>Bow / Front</b><br><span class="note">Gate-A silhouette remains locked.</span></div></div>
+<div class="card"><a href="images/section-a-v05b2-side-profile.png" target="_blank"><img src="images/section-a-v05b2-side-profile.png"></a><div class="meta"><b>Side / Profile</b></div></div>
+<div class="card"><a href="images/section-a-v05b2-top-plan.png" target="_blank"><img src="images/section-a-v05b2-top-plan.png"></a><div class="meta"><b>Top / Plan</b></div></div>
+</div>
+<h2>Damage Alignment Closeups</h2>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v05b2-port-damage.png" target="_blank"><img src="images/section-a-v05b2-port-damage.png"></a><div class="meta"><b>Port Damage — surface-normal aligned</b></div></div>
+<div class="card wide"><a href="images/section-a-v05b2-starboard-damage.png" target="_blank"><img src="images/section-a-v05b2-starboard-damage.png"></a><div class="meta"><b>Starboard Damage — surface-normal aligned</b></div></div>
+</div><h2>Retained Meshy Assets</h2>
+<p class="note">No new Meshy generation was required for this correction. Gate-B V02 reuses the same passed Torn Breach Rim and Buckled Hull Plate assets. The Corrosion Cluster remains HOLD because it is too volumetric for a surface patch.</p>
+<p class="note"><a href="section-a-v05-gate-b.html">The original Gate-B page retains the isolated reference/clean comparisons.</a></p>
+<h2>Current Gate</h2>
+<p class="note"><b>Review damage-model alignment first.</b> If the models now sit correctly on the curved hull, then judge degradation level and breach placement. No Unreal import until this passes.</p>
+</main></body></html>
