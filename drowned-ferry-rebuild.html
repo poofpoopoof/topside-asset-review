@@ -15,28 +15,29 @@ h1,h2{margin:0 0 8px}.phase{background:#191e23;border:1px solid #2c343c;border-r
 </head>
 <body>
 <header>
-<h1>Drowned Ferry — MASTER-01B Rebuild <span class="badge">PHASE 8</span></h1>
-<p class="sub">Older Coastal Ferry master locked at approximately 110 m × 18 m. Section A V05 Gate A PASSED and remains the structural authority. V08 full Meshy shell failed fit over the internals. Active V09 keeps the exact Gate-A hull as the visible shell and transfers only the Meshy donor damage language onto that exact geometry.</p>
-<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v09-conformed-shell.html"><strong>Open V09 Conformed Damage Shell Review →</strong></a></p>
+<h1>Drowned Ferry — V02 Dimensional-Master Rebuild <span class="badge">PHASE 9</span></h1>
+<p class="sub">Topside AI Asset Workflow 3.0 now uses the approved Section-A V02 internal structure as the Ferry dimensional master. AI measured V02, built the exact hull with Blender Python, split it into modular sections, added controlled structural damage, passed Blender QA, and automatically imported/tested the result in Unreal.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v02-exact-hull-unreal.html"><strong>Open V02 Exact-Hull Unreal Review →</strong></a></p>
 </header>
 <main>
-<section class="phase done"><h2>Phases 1–7 <span class="badge pass">PASSED</span></h2>
-<p class="note">MASTER-01B exterior selection and scale, A–G exterior sections, deck/circulation anatomy, Shared Ferry Structural Kit, A1–G3 internal scene slots, and section-specific modular-kit plans are locked.</p></section><section class="phase active"><h2>Phase 8 — Blender Assembly / Game Director Review <span class="badge">ACTIVE</span></h2>
-<p class="note">Section A V05 Gate A PASSED and remains the exact structural/scale truth. V09 uses that same hull geometry as the visible shell, keeps every deck/frame/stair object unmoved, and transfers only small-scale donor damage. V09 differs from Gate-A by only centimeters in overall bounds and includes a yellow Gate-A wire-fit QA view. No Unreal import until this review passes.</p></section>
-<section class="phase future"><h2>Phase 9 — Unreal Isolated QA</h2>
-<p class="note">After approval, import the reviewed section/components into isolated Unreal QA and verify scale, collision, pivots, seams, traversal and performance.</p></section>
+<section class="phase done"><h2>Phases 1–7 <span class="badge pass">PASSED / HISTORICAL PLANNING</span></h2>
+<p class="note">MASTER-01B planning remains useful design reference. Active dimensional authority for Section A is now the approved V02 internal structure under AI Asset Workflow 3.0.</p></section>
+<section class="phase done"><h2>Phase 8 — Exact Blender Geometry / QA <span class="badge pass">PASSED</span></h2>
+<p class="note">V02 measured as dimensional master. AI-written Blender Python built an exact 11.0 m × 18.2 m × 11.5 m hull, divided it into four modules, added controlled damage, retained V02 internals unmoved, passed all four frame-fit checks, preserved 1.2 m × 2.2 m clearance targets, and verified zero module-boundary gaps.</p></section>
+<section class="phase active"><h2>Phase 9 — Unreal Isolated QA / Game Director Review <span class="badge">ACTIVE</span></h2>
+<p class="note">Automatic Unreal import passed at exact expected scale; map check reports 0 errors / 0 warnings; collision is configured for isolated QA; five review screenshots were captured. Current gate is Game Director PASS / CHANGE.</p></section>
 <section class="phase future"><h2>Phase 10 — Materials / Atmosphere / Lighting</h2>
 <p class="note">Rust, marine growth, sediment, final lighting and atmosphere come only after geometry and traversal approval.</p></section>
-<h2>Locked Build Rules</h2>
+<h2>Locked Workflow 3.0 Rules</h2>
 <ol>
-<li>Every Ferry scene is assembled from multiple reusable components; no one-piece room/POI mesh.</li>
-<li>Default visible-asset workflow is reference → Meshy → Blender cleanup/uniform scale → modular assembly → public review → Game Director approval → Unreal.</li>
-<li>Explicit exception: silhouette-defining primary geometry may be designated as precision-Blender vessel truth when Meshy cannot preserve the approved shape; localized Meshy detail is then added only after the clean form passes.</li>
-<li>Precision Blender geometry may also support traversal/collision underneath visible Meshy detail.</li>
-<li>Do not non-uniformly stretch a failed Meshy result; regenerate or split it.</li>
-<li>Default traversal is walking unless a specific area is explicitly approved as swim-only.</li>
+<li>AI does the production work; the Game Director describes, reviews, PASS/FAILs, and requests changes.</li>
+<li>Approved V02 internal structure is the Section-A dimensional master.</li>
+<li>If geometry must fit another object exactly, AI builds it with Blender Python/Houdini; whole-object image-to-3D is not structural authority.</li>
+<li>Do not move/rescale V02 internals to fit a generated hull.</li>
+<li>Blender is the geometry source of truth; Unreal is the gameplay source of truth.</li>
 <li>Player reference is 1.8 m; ordinary walking target is at least 1.2 m clear width × 2.2 m clear height.</li>
-<li>Geometry and scale precede shaders/material polish.</li>
+<li>Meshy/Rodin/Tripo are used for secondary props/wreckage/equipment, not the exact hull envelope.</li>
+<li>Final Substance/material polish, PCG/Houdini distribution and level dressing come after geometry/gameplay approval.</li>
 </ol>
 </main>
 </body>

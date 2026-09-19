@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A V02 Exact Hull Unreal QA</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#25462f;color:#c9ffd7;margin-left:8px;vertical-align:3px}
+a{color:#9fd5ff}.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}
+.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}.card img{width:100%;display:block}.meta{padding:10px 12px}
+.qa{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 26px}
+table{width:100%;border-collapse:collapse;margin-top:10px}th,td{border:1px solid #313b44;padding:8px;text-align:left}th{background:#1b2228}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head><body>
+<header>
+<h1>Drowned Ferry — Section A V02 Exact Hull <span class="badge">UNREAL QA PASS</span></h1>
+<p class="sub">Topside AI Asset Workflow 3.0 test. The approved V02 internal structure is the dimensional master. AI measured V02, built the exterior hull deterministically with Blender Python, split it into four modular sections, added controlled damage, passed Blender QA, then imported the exact assembly into an isolated Unreal test map.</p>
+<p><a href="index.html">← Main Asset Review</a></p>
+</header><main>
+
+<div class="qa">
+<b>Verified geometry/gameplay-scale QA</b>
+<table>
+<tr><th>Check</th><th>Result</th></tr>
+<tr><td>V02 internals moved/rescaled</td><td><b>NO</b></td></tr>
+<tr><td>Hull size in Unreal</td><td><b>1100.0 × 1820.001 × 1150.0 cm</b></td></tr>
+<tr><td>V02 internals size in Unreal</td><td><b>1040.0 × 1820.0 × 1624.939 cm</b></td></tr>
+<tr><td>Primary frame stations</td><td><b>4 / 4 PASS</b></td></tr>
+<tr><td>Modular hull boundaries</td><td><b>0.0 m gap</b> at X 2.5 / 5.5 / 8.5 m</td></tr>
+<tr><td>Walking-clearance contract</td><td><b>1.2 m wide × 2.2 m high</b></td></tr>
+<tr><td>Unreal map check</td><td><b>0 errors / 0 warnings</b></td></tr>
+<tr><td>Collision</td><td>Complex-as-simple requested; BlockAll test profile</td></tr>
+<tr><td>Whole-object image-to-3D hull</td><td><b>NOT USED</b></td></tr>
+<tr><td>Production route</td><td>AI-written Blender Python → automated Blender QA → automatic Unreal import/QA</td></tr>
+</table>
+<p class="note">This is a geometry/gameplay review. Final materials, corrosion shaders, atmosphere, PCG, and level dressing have not started.</p>
+</div>
+
+<h2>Unreal Review Screenshots</h2>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v02-exact-unreal-perspective.png"><img src="images/section-a-v02-exact-unreal-perspective.png"></a><div class="meta"><b>01 — Exterior Perspective</b></div></div>
+<div class="card wide"><a href="images/section-a-v02-exact-unreal-reverse.png"><img src="images/section-a-v02-exact-unreal-reverse.png"></a><div class="meta"><b>02 — Reverse / Internal Fit</b></div></div>
+<div class="card wide"><a href="images/section-a-v02-exact-unreal-port.png"><img src="images/section-a-v02-exact-unreal-port.png"></a><div class="meta"><b>03 — Port Profile</b></div></div>
+<div class="card"><a href="images/section-a-v02-exact-unreal-player-vehicle.png"><img src="images/section-a-v02-exact-unreal-player-vehicle.png"></a><div class="meta"><b>04 — Player Scale / Vehicle Deck</b></div></div>
+<div class="card"><a href="images/section-a-v02-exact-unreal-player-lower.png"><img src="images/section-a-v02-exact-unreal-player-lower.png"></a><div class="meta"><b>05 — Player Scale / Lower Deck</b></div></div>
+</div>
+
+<h2>Current Gate</h2>
+<p class="note"><b>PASS / CHANGE.</b> Review the hull fit, overall shape, damage amount, and player-scale read. If you PASS this geometry/gameplay stage, Workflow 3.0 moves to approved-asset storage and the next production layer. If you request changes, AI rebuilds/repairs in Blender, reimports to Unreal, and presents a new version.</p>
+
+</main></body></html>
