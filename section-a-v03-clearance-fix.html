@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section A V03 Clearance Fix</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+a{color:#9fd5ff}.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}
+.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}.card img{width:100%;display:block}.meta{padding:10px 12px}
+.qa{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 26px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head><body>
+<header>
+<h1>Drowned Ferry — Section A V03 <span class="badge">CLIPPING FIX — BLENDER GATE</span></h1>
+<p class="sub">V02 was rejected for visible internal-structure clipping. V03 keeps the approved V02 source file untouched, moves the exterior shell outward around the primary structure, and derives corrected longitudinal stringers that stop inside the bow taper instead of protruding through the hull.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v02-dimensional-master-blender.html">Rejected V02 evidence</a></p>
+</header><main>
+<div class="qa"><b>Clipping QA</b>
+<p class="note">Shell thickness: <b>0.10 m</b>.<br>
+Outer clearance added around frame envelope: <b>0.25 m</b>.<br>
+Primary-frame inner-shell clearance: <b>0.15 m</b> at all four frame stations.<br>
+Authoritative structural vertices checked against inner hull: <b>380</b>.<br>
+Clipping violations: <b>0</b>.<br>
+Minimum measured inner-envelope clearance: <b>5.08 cm</b>.<br>
+Module-boundary gaps: <b>0.0 m</b>.<br>
+V02 source file modified: <b>NO</b>.<br>
+Primary frames / decks / bow portal moved: <b>NO</b>.<br>
+Unreal advancement: <b>NO</b>.</p></div>
+
+<h2>Derived Stringer Correction</h2>
+<div class="qa">
+<p class="note">The V02 source stringers themselves were longer than the approved bow taper allowed. The source file remains untouched. V03 creates corrected derived copies at the same Y/Z and cross-section, preserving the aft endpoint while trimming only the forward end:</p>
+<p class="note">Lower-deck port/starboard stringers: <b>0.601 m</b> trimmed from the forward end.<br>
+Vehicle-deck port/starboard stringers: <b>2.101 m</b> trimmed from the forward end.<br>
+Clearance at each new forward stringer endpoint: <b>5.08 cm</b>.</p>
+</div>
+
+<h2>Overall Geometry</h2>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v03-clearance-perspective.png"><img src="images/section-a-v03-clearance-perspective.png"></a><div class="meta"><b>Perspective</b></div></div>
+<div class="card wide"><a href="images/section-a-v03-clearance-reverse-fit.png"><img src="images/section-a-v03-clearance-reverse-fit.png"></a><div class="meta"><b>Reverse / Internal Fit</b></div></div>
+<div class="card"><a href="images/section-a-v03-clearance-port.png"><img src="images/section-a-v03-clearance-port.png"></a><div class="meta"><b>Port Profile</b></div></div>
+<div class="card"><a href="images/section-a-v03-clearance-starboard.png"><img src="images/section-a-v03-clearance-starboard.png"></a><div class="meta"><b>Starboard Profile</b></div></div>
+<div class="card wide"><a href="images/section-a-v03-clearance-bow.png"><img src="images/section-a-v03-clearance-bow.png"></a><div class="meta"><b>Bow</b></div></div>
+<div class="card wide"><a href="images/section-a-v03-clearance-top.png"><img src="images/section-a-v03-clearance-top.png"></a><div class="meta"><b>Top</b></div></div>
+</div>
+
+<h2>Clipping Review</h2>
+<div class="grid">
+<div class="card wide"><a href="images/section-a-v03-clearance-port-clipping-qa.png"><img src="images/section-a-v03-clearance-port-clipping-qa.png"></a><div class="meta"><b>Port Exterior Clipping QA</b><br><span class="note">Dedicated close exterior view.</span></div></div>
+<div class="card wide"><a href="images/section-a-v03-clearance-starboard-clipping-qa.png"><img src="images/section-a-v03-clearance-starboard-clipping-qa.png"></a><div class="meta"><b>Starboard Exterior Clipping QA</b></div></div>
+<div class="card wide"><a href="images/section-a-v03-clearance-player-fit.png"><img src="images/section-a-v03-clearance-player-fit.png"></a><div class="meta"><b>Player / Internal Fit</b></div></div>
+</div>
+
+<h2>Current Gate</h2>
+<p class="note"><b>PASS / FAIL / changes on the clipping correction and hull shape.</b> No Unreal work will advance until this corrected Blender version passes.</p>
+</main></body></html>
