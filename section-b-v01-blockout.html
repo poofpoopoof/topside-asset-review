@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section B V01 Blockout</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#564516;color:#ffe7a0;margin-left:8px;vertical-align:3px}
+a{color:#9fd5ff}.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}
+.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}.card img{width:100%;display:block}.meta{padding:10px 12px}
+.qa{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 26px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head><body>
+<header><h1>Drowned Ferry — Section B V01 <span class="badge">STRUCTURAL BLOCKOUT — BLENDER GATE</span></h1>
+<p class="sub">Section A is fully approved. Section B is the 17 m Forward Passenger Block immediately aft of it. This is geometry/scale only: exact A/B interface, hull/deck backbone, reusable frames/stringers, passenger-block envelope and B1/B2/B3 guide volumes. No final materials or interior props.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-a-v08-unreal-qa.html">Approved Section A Unreal QA</a></p>
+</header><main>
+<div class="qa"><b>Locked dimensional QA</b><p class="note">
+Global span: <b>X 11.0–28.0 m</b> — exact <b>17.0 m</b> length.<br>
+A/B outer beam: <b>18.703 m PASS</b>.<br>
+Shell thickness: <b>0.10 m PASS</b>.<br>
+Deck elevations: lower <b>4 m</b>, vehicle <b>9 m</b>, main passenger <b>14 m</b>, upper passenger <b>18 m</b>.<br>
+Forward deck widths match Section A exactly: lower ±7.38 m, vehicle ±8.46 m, main ±6.84 m.<br>
+Frame stations: 11 / 14 / 17 / 20 / 23 / 26 / 28 m; maximum spacing <b>3.0 m PASS</b>.<br>
+Traversal references: 1.8 m player + 1.2 m × 2.2 m gauges on B1/B2/B3.<br>
+Section A modified: <b>NO</b>. Final materials: <b>DEFERRED</b>.</p></div>
+
+<h2>Overall Structure</h2><div class="grid">
+<div class="card wide"><a href="images/section-b-v01-context.png"><img src="images/section-b-v01-context.png"></a><div class="meta"><b>Section A + Section B context</b><br><span class="note">Approved bow on the left; new 17 m Forward Passenger Block continues aft.</span></div></div>
+<div class="card"><a href="images/section-b-v01-port.png"><img src="images/section-b-v01-port.png"></a><div class="meta"><b>Port Profile</b></div></div>
+<div class="card"><a href="images/section-b-v01-top.png"><img src="images/section-b-v01-top.png"></a><div class="meta"><b>Top View</b></div></div>
+</div>
+
+<h2>Critical Fit</h2><div class="grid">
+<div class="card wide"><a href="images/section-b-v01-interface.png"><img src="images/section-b-v01-interface.png"></a><div class="meta"><b>A/B Interface</b><br><span class="note">Yellow guide marks the approved seam. Section-B hull/decks start from the exact Section-A aft widths.</span></div></div>
+<div class="card wide"><a href="images/section-b-v01-decks.png"><img src="images/section-b-v01-decks.png"></a><div class="meta"><b>Deck Stack + Passenger Envelope</b><br><span class="note">Cyan outer wireframe is the maximum passenger-block envelope only; it is not a locked wall line.</span></div></div>
+<div class="card wide"><a href="images/section-b-v01-player.png"><img src="images/section-b-v01-player.png"></a><div class="meta"><b>Player / Traversal Scale</b><br><span class="note">B3 vehicle deck, B2 main lounge level, and B1 upper cabin level use 1.8 m player references and 1.2 × 2.2 m clearance gauges.</span></div></div>
+</div>
+
+<h2>Scene-slot guides</h2>
+<div class="qa"><p class="note">
+<b>B3 Forward Vehicle</b> — vehicle-deck guide volume only; vehicles/debris deferred.<br>
+<b>B2 Forward Lounge</b> — main passenger deck guide volume only; seating/bar/windows deferred.<br>
+<b>B1 Forward Cabins</b> — upper passenger guide volume only; cabin/corridor walls deferred.<br><br>
+The exact B1/B2 wall partitioning and passenger-block exterior wall width remain <b>provisional</b>. This gate is for the Section-B structural backbone and its relationship to Section A.</p></div>
+
+<h2>Current Gate</h2>
+<p class="note"><b>PASS / FAIL / changes on Section-B geometry and proportions.</b> On PASS, the next step is to lock the passenger-block exterior/scene-slot partitioning and begin the modular B1/B2/B3 component build. No Unreal or final materials yet.</p>
+</main></body></html>
