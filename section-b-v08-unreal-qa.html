@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topside - Drowned Ferry Section B V08 Unreal QA</title>
+<style>
+body{margin:0;background:#101316;color:#e8edf1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main{max-width:1200px;margin:auto;padding:22px 18px}.sub,.note{color:#aeb8c0;line-height:1.5}
+h1,h2{margin:0 0 8px}.badge{font-size:12px;padding:4px 9px;border-radius:999px;background:#174b2d;color:#c9ffdc;margin-left:8px;vertical-align:3px}
+a{color:#9fd5ff}.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 28px}
+.card{background:#191e23;border:1px solid #2c343c;border-radius:12px;overflow:hidden}.card img{width:100%;display:block}.meta{padding:10px 12px}
+.qa{background:#161b20;border:1px solid #313b44;border-radius:12px;padding:14px 16px;margin:14px 0 26px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+</style></head><body>
+<header><h1>Drowned Ferry — Section B V08 <span class="badge">UNREAL QA — AUTOMATED PASS</span></h1>
+<p class="sub">V07 controlled damage is PASSED. Section B was exported from the locked Blender authority, cleaned only in temporary Unreal export copies, and imported into an isolated Unreal 5.8 test namespace for scale, collision, full-route traversal and visual QA.</p>
+<p><a href="index.html">← Main Asset Review</a> &nbsp; <a href="section-b-v07-controlled-damage.html">Passed V07 Damage Review</a></p>
+</header><main>
+<div class="qa"><b>Automated Blender + Unreal QA</b><p class="note">
+Blender route-clearance QA: <b>PASS</b>.<br>
+Blender cleaned-export mesh health: <b>PASS</b>.<br>
+Passed V07 source modified: <b>NO</b> — cleanup applied to Unreal export copies only.<br>
+Imported hull/structure: <b>1715.0 × 1962.608 × 2088.0 cm</b> — exact export match.<br>
+Imported interior/modules: <b>1650.0 × 1608.5 × 1150.0 cm</b> — exact export match.<br>
+Collision: <b>complex-as-simple / BlockAll</b>.<br>
+Player capsule: <b>34 cm radius / 88 cm half-height</b>.<br>
+B1 main-corridor full capsule sweep: <b>PASS</b>.<br>
+B1 upper-corridor full capsule sweep: <b>PASS</b>.<br>
+B2 lounge-aisle full capsule sweep: <b>PASS</b>.<br>
+B3 vehicle-route full capsule sweep: <b>PASS</b>.<br>
+Floor/support traces at all four routes: <b>PASS</b>.<br>
+Map Check: <b>0 errors / 0 warnings</b>.<br>
+Screenshot automation: <b>PASS</b>.</p></div>
+
+<h2>Exterior + damage</h2><div class="grid">
+<div class="card wide"><a href="images/section-b-v08-unreal-exterior.png"><img src="images/section-b-v08-unreal-exterior.png"></a><div class="meta"><b>Section B imported in Unreal</b><br><span class="note">Passed V03 massing + V06 frame clearance + V07 controlled damage.</span></div></div>
+<div class="card wide"><a href="images/section-b-v08-unreal-port-damage.png"><img src="images/section-b-v08-unreal-port-damage.png"></a><div class="meta"><b>Port damage close-up</b></div></div>
+</div>
+
+<h2>B1 Forward Cabins</h2><div class="grid">
+<div class="card"><a href="images/section-b-v08-unreal-b1-main.png"><img src="images/section-b-v08-unreal-b1-main.png"></a><div class="meta"><b>Main-deck cabins / corridor</b><br><span class="note">Full standing-player capsule sweep passes end-to-end.</span></div></div>
+<div class="card"><a href="images/section-b-v08-unreal-b1-upper.png"><img src="images/section-b-v08-unreal-b1-upper.png"></a><div class="meta"><b>Upper-deck cabins / corridor</b><br><span class="note">Full standing-player capsule sweep passes end-to-end.</span></div></div>
+</div>
+
+<h2>B2 Forward Lounge</h2><div class="grid">
+<div class="card wide"><a href="images/section-b-v08-unreal-b2-lounge.png"><img src="images/section-b-v08-unreal-b2-lounge.png"></a><div class="meta"><b>Lounge aisle + production modules</b><br><span class="note">1.60 m central aisle authority preserved; full capsule sweep passes.</span></div></div>
+</div>
+
+<h2>B3 Forward Vehicle</h2><div class="grid">
+<div class="card wide"><a href="images/section-b-v08-unreal-b3-vehicle.png"><img src="images/section-b-v08-unreal-b3-vehicle.png"></a><div class="meta"><b>Vehicle-deck route + production kit</b><br><span class="note">3.0 m central route authority preserved; full capsule sweep passes.</span></div></div>
+</div>
+
+<h2>Current Gate</h2>
+<p class="note"><b>Game Director Unreal visual review: PASS / FAIL / changes.</b> Automated Blender and Unreal geometry/gameplay QA are PASS. Final materials/lookdev remain deferred until this Unreal review is accepted.</p>
+</main></body></html>
