@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Topside — Combat + Medical Anatomy V01 Review</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;background:#10151b;color:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+header,main,footer{max-width:1080px;margin:auto;padding:18px}
+header{padding-top:24px}a{color:#a8d9ff}nav{font-size:14px;margin-bottom:22px}
+h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin:8px 0 14px}h2{margin:34px 0 12px;font-size:23px}
+.eyebrow{color:#9fc4d7;font-size:13px;text-transform:uppercase;letter-spacing:.11em;font-weight:700}
+.badge{display:inline-block;background:#345627;color:#d9ffc9;border:1px solid #76a35b;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:800}
+.intro{font-size:18px;max-width:760px;color:#d9e3ea}.notice{background:#1e2933;border-left:4px solid #e6ba5b;padding:15px 18px;border-radius:6px;margin:24px 0;color:#e4ebef}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:22px 0}.stat{background:#1d2730;border:1px solid #35424e;border-radius:10px;padding:12px}.stat strong{display:block;font-size:20px}.stat span{color:#b9c8d4;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr;gap:18px}.card{background:#1b252e;border:1px solid #34434d;border-radius:12px;overflow:hidden}.card img{display:block;width:100%;height:auto}.card .body{padding:12px 15px 16px}.card h3{margin:0 0 5px;font-size:18px}.card p{margin:0;color:#bdcbd5;font-size:14px}.card a{display:block}
+footer{color:#a6b4bf;font-size:13px;padding-bottom:34px}
+@media(min-width:720px){.stats{grid-template-columns:repeat(4,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.wide{grid-column:1/-1}.wide img{max-height:760px;object-fit:contain;background:#20252b}}
+</style>
+</head>
+<body>
+<header>
+<nav><a href="index.html">← Topside review home</a></nav>
+<div class="eyebrow">Topside / Combat + Medical / V01</div>
+<h1>Anatomical greybox silhouette review</h1>
+<span class="badge">AWAITING GAME DIRECTOR VISUAL PASS / CHANGES</span>
+<p class="intro">A 1.8 m mechanical body guide with seven visible injury regions. Review whether standing, crouch, prone, swimming and lean silhouettes give a clear, fair basis for future hitboxes. Tap any image to open it full size on your phone.</p>
+</header>
+<main>
+<div class="notice"><strong>Scope of this review:</strong> These five Unreal images are static pose snapshots baked from the same Blender rig. The rig and animation keys imported into Unreal, but live skeletal playback and physical hit collision have not passed. A visual PASS approves the silhouette only; it does not approve combat integration or final character art.</div>
+<div class="stats">
+<div class="stat"><strong>180 cm</strong><span>standing height</span></div>
+<div class="stat"><strong>133.4 cm</strong><span>crouch height</span></div>
+<div class="stat"><strong>42.6 cm</strong><span>prone height</span></div>
+<div class="stat"><strong>74.2 cm</strong><span>swim pose height</span></div>
+</div>
+<h2>Region guide</h2>
+<div class="grid"><article class="card wide"><a href="images/combat-medical-anatomy-v01-blender-regions.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v01-blender-regions.png" alt="Blender front view showing seven color-coded anatomical injury regions"></a><div class="body"><h3>Seven visible regions</h3><p>Head, chest, abdomen, left and right arms, left and right legs. These colors are QA labels, not final materials.</p></div></article></div>
+<h2>Unreal pose screenshots</h2>
+<div class="grid">
+<article class="card"><a href="images/combat-medical-anatomy-v01-unreal-standing.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v01-unreal-standing.png" alt="Unreal standing front view of 180 centimeter anatomy greybox"></a><div class="body"><h3>Standing · front</h3><p>Full-height baseline and limb spacing.</p></div></article>
+<article class="card"><a href="images/combat-medical-anatomy-v01-unreal-crouching.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v01-unreal-crouching.png" alt="Unreal side view of crouched anatomy greybox"></a><div class="body"><h3>Crouching · side</h3><p>Compact leg fold and lowered head/chest exposure.</p></div></article>
+<article class="card"><a href="images/combat-medical-anatomy-v01-unreal-prone.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v01-unreal-prone.png" alt="Unreal side view of prone anatomy greybox"></a><div class="body"><h3>Prone · side</h3><p>Low horizontal body exposure.</p></div></article>
+<article class="card"><a href="images/combat-medical-anatomy-v01-unreal-swimming.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v01-unreal-swimming.png" alt="Unreal side view of swimming anatomy greybox"></a><div class="body"><h3>Swimming · side</h3><p>Horizontal body with arm stroke silhouette.</p></div></article>
+<article class="card wide"><a href="images/combat-medical-anatomy-v01-unreal-lean.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v01-unreal-lean.png" alt="Unreal front view of anatomy greybox leaning left"></a><div class="body"><h3>Lean left · front</h3><p>Asymmetric chest and head exposure. The rig also has a mirrored right lean key.</p></div></article>
+</div>
+</main>
+<footer>Topside AI Asset Workflow 3.0 · Game Director silhouette review · V01 remains isolated from the production player.</footer>
+</body>
+</html>
