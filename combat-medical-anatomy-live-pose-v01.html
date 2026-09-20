@@ -8,7 +8,7 @@
 </style>
 </head>
 <body><header><nav><a href="index.html">← Topside review home</a> · <a href="combat-medical-anatomy-v02.html">Passed V02 silhouettes</a> · <a href="combat-medical-anatomy-v03-crouch-lean.html">Passed V03 Blender silhouettes</a></nav>
-<p>Topside / Combat + Medical / isolated V03 rig</p><h1>Live skeletal pose playback</h1><span class="badge">UNREAL TECHNICAL QA PASS · GAME DIRECTOR REVIEW PENDING</span>
+<p>Topside / Combat + Medical / isolated V03 rig</p><h1>Live skeletal pose playback</h1><span class="badge">UNREAL TECHNICAL QA PASS · GAME DIRECTOR PASSED</span>
 <p class="intro">Eight fresh Unreal PIE captures of the same V03 SkeletalMeshActor evaluating its imported animation sequence. These are live skeletal poses, not baked static pose meshes. Tap any image to open it full size.</p></header>
 <main><div class="notice"><strong>Player-relative sides:</strong> gameplay/anatomical left is −Y and right is +Y when the character faces +X. The front-facing camera reverses the side you see on your phone: image right is player left. The named thigh bones and measured head displacement confirm the mapping.</div>
 <h2>Standing and low stances</h2><div class="grid">
@@ -24,4 +24,4 @@
 <article class="card"><a href="images/combat-medical-anatomy-live-crouch-lean-right.png"><img src="images/combat-medical-anatomy-live-crouch-lean-right.png" alt="Live skeletal crouch lean toward anatomical right in Unreal"></a><div class="body"><h3>Crouch lean right</h3><p>Frame 140 · head +21.991 cm in Y from pelvis.</p></div></article>
 </div><h2>Objective side check</h2><table><tr><th>Bone/pose</th><th>Y from pelvis</th></tr><tr><td>LeftThigh</td><td>−16.000 cm</td></tr><tr><td>RightThigh</td><td>+16.000 cm</td></tr><tr><td>Lean left head</td><td>−26.295 cm</td></tr><tr><td>Lean right head</td><td>+26.293 cm</td></tr><tr><td>Crouch lean left head</td><td>−21.954 cm</td></tr><tr><td>Crouch lean right head</td><td>+21.991 cm</td></tr></table>
 <div class="notice"><strong>Scope and limitation:</strong> This proves live isolated skeletal evaluation and left/right mapping. The capture forces bone refresh for an offscreen PIE preview. Prone and swim currently point their heads toward −X while the tested gameplay-forward convention is +X; heading integration remains open. No production player mesh, collision, equipment, inventory, gameplay body, physical hit regions or animation state machine was changed.</div>
-</main><footer>Topside AI Asset Workflow 3.0 · Please review these live Unreal silhouettes. The technical QA pass is not a Game Director visual pass.</footer></body></html>
+</main><footer>Topside AI Asset Workflow 3.0 · Game Director passed this isolated live pose review on 2026-09-20. Physical hit collision and production player integration remain separate gates.</footer></body></html>
