@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Topside — Anatomy V03 Crouch Lean</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;background:#10151b;color:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+header,main,footer{max-width:1100px;margin:auto;padding:18px}header{padding-top:24px}
+a{color:#a8d9ff}h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin:8px 0 14px}
+h2{margin:34px 0 12px;font-size:23px}.intro{font-size:18px;max-width:780px;color:#d9e3ea}
+.badge{display:inline-block;background:#345627;color:#d9ffc9;border:1px solid #76a35b;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:800}
+.notice{background:#1e2933;border-left:4px solid #e6ba5b;padding:15px 18px;border-radius:6px;margin:24px 0;color:#e4ebef}
+.grid{display:grid;grid-template-columns:1fr;gap:18px}.card{background:#1b252e;border:1px solid #34434d;border-radius:12px;overflow:hidden}
+.card img{display:block;width:100%;height:auto}.card .body{padding:12px 15px 16px}.card h3{margin:0 0 5px;font-size:18px}.card p{margin:0;color:#bdcbd5;font-size:14px}
+footer{color:#a6b4bf;font-size:13px;padding-bottom:34px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}.wide{grid-column:1/-1}.wide img{max-height:760px;object-fit:contain;background:#20252b}}
+</style>
+</head>
+<body>
+<header>
+<nav><a href="index.html">← Topside review home</a> · <a href="combat-medical-anatomy-v02.html">Passed V02 poses</a></nav>
+<p>Topside / Combat + Medical / V03</p>
+<h1>Crouch plus lean</h1>
+<span class="badge">GAME DIRECTOR BLENDER SILHOUETTE PASS · UNREAL QA SCREENSHOTS</span>
+<p class="intro">The game allows leaning while crouched, so this adds both directions to the isolated anatomy pilot. Compare the new front views with the crouch baseline. Tap an image to open it full size on your phone.</p>
+</header>
+<main>
+<div class="notice">The colored Blender crouch-lean silhouettes received a Game Director PASS. The Unreal screenshots below were captured afterward from static pose snapshots and are published for inspection. Each crouched lean shifts the head 22.0 cm sideways from the pelvis; the feet remain grounded. Live skeletal playback and physical hit collision remain pending.</div>
+<h2>Unreal crouch-lean screenshots</h2>
+<div class="grid">
+<article class="card wide"><a href="images/combat-medical-anatomy-v03-unreal-crouch-baseline.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v03-unreal-crouch-baseline.png" alt="Unreal side view of the neutral crouched anatomy greybox"></a><div class="body"><h3>Neutral crouch · side</h3><p>Existing crouch pose for comparison.</p></div></article>
+<article class="card"><a href="images/combat-medical-anatomy-v03-unreal-crouch-lean-a.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v03-unreal-crouch-lean-a.png" alt="Unreal front view of anatomy greybox crouched and leaning to one side"></a><div class="body"><h3>Crouch + lean · direction A</h3><p>Low stance with head and chest displaced sideways.</p></div></article>
+<article class="card"><a href="images/combat-medical-anatomy-v03-unreal-crouch-lean-b.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v03-unreal-crouch-lean-b.png" alt="Unreal front view of anatomy greybox crouched and leaning to the opposite side"></a><div class="body"><h3>Crouch + lean · direction B</h3><p>Mirrored direction at the same height and offset.</p></div></article>
+</div>
+<h2>Colored Blender pose guides</h2>
+<div class="grid">
+<article class="card"><a href="images/combat-medical-anatomy-v03-blender-crouch-lean-a.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v03-blender-crouch-lean-a.png" alt="Blender colored anatomy guide crouched and leaning left"></a><div class="body"><h3>Crouch lean A</h3><p>Color shows the seven injury regions; it is not final material art.</p></div></article>
+<article class="card"><a href="images/combat-medical-anatomy-v03-blender-crouch-lean-b.png" target="_blank" rel="noopener"><img src="images/combat-medical-anatomy-v03-blender-crouch-lean-b.png" alt="Blender colored anatomy guide crouched and leaning right"></a><div class="body"><h3>Crouch lean B</h3><p>Mirrored skeletal key and static QA snapshot.</p></div></article>
+</div>
+</main>
+<footer>Topside AI Asset Workflow 3.0 · V03 is isolated from the production player. Unreal views are baked snapshots, not live animation.</footer>
+</body>
+</html>
