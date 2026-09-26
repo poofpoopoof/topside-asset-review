@@ -1,0 +1,93 @@
+{
+  "status": "AWAITING GAME DIRECTOR REVIEW",
+  "source_model": "Meshy 7.1 Ultra 2K",
+  "triangles": {
+    "Core_V03": 212792,
+    "Core_V02": 11998,
+    "Shroud_V03": 341726,
+    "Shroud_V02": 10000,
+    "Pair_V02": 21998,
+    "Pair_V03": 554518
+  },
+  "credits_used": 68,
+  "references_cost": 18,
+  "geometry_cost": 50,
+  "source_detail_preserved": true,
+  "decimation": false,
+  "subdivision": false,
+  "whole_object_remesh": false,
+  "source_geometry_pass": true,
+  "export_validation": {
+    "pass": true,
+    "checks": [
+      {
+        "export": "Core_V03",
+        "mesh_count": 1,
+        "triangles": 212792,
+        "expected_triangles": 212792,
+        "non_manifold_edges_after_seam_weld": 0,
+        "finite": true,
+        "uvs": true,
+        "pass": true
+      },
+      {
+        "export": "Shroud_V03",
+        "mesh_count": 1,
+        "triangles": 341726,
+        "expected_triangles": 341726,
+        "non_manifold_edges_after_seam_weld": 0,
+        "finite": true,
+        "uvs": true,
+        "pass": true
+      },
+      {
+        "export": "Core_V02",
+        "mesh_count": 1,
+        "triangles": 11998,
+        "expected_triangles": 11998,
+        "non_manifold_edges_after_seam_weld": 0,
+        "finite": true,
+        "uvs": true,
+        "pass": true
+      },
+      {
+        "export": "Shroud_V02",
+        "mesh_count": 1,
+        "triangles": 10000,
+        "expected_triangles": 10000,
+        "non_manifold_edges_after_seam_weld": 0,
+        "finite": true,
+        "uvs": true,
+        "pass": true
+      },
+      {
+        "export": "Pair_V03",
+        "mesh_count": 2,
+        "triangles": 554518,
+        "expected_triangles": 554518,
+        "non_manifold_edges_after_seam_weld": 0,
+        "finite": true,
+        "uvs": true,
+        "pass": true
+      },
+      {
+        "export": "Pair_V02",
+        "mesh_count": 2,
+        "triangles": 21998,
+        "expected_triangles": 21998,
+        "non_manifold_edges_after_seam_weld": 0,
+        "finite": true,
+        "uvs": true,
+        "pass": true
+      }
+    ],
+    "boundary": "Digital asset interchange only; no Unreal/collision/functional testing"
+  },
+  "limitations": [
+    "No Rodin comparison or paid software installation",
+    "Lookdev is provisional Blender procedural shading, not Substance Painter or baked final PBR",
+    "Two-part display uses a small presentation gap; exact interfaces, collision and Unreal are not validated",
+    "Shroud uses one reference view because its generated second view was inconsistent",
+    "Visual fidelity and hero quality require Game Director approval"
+  ]
+}
